@@ -1,4 +1,4 @@
-import { HStack, Spacer } from '@chakra-ui/react';
+import { Box, HStack, Spacer } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
 import Logo from './Logo';
@@ -37,22 +37,25 @@ function Navbar(props) {
     ];
 
     return (
-        <HStack
-            margin={'2rem'}
-            align={'center'}
-        >
-            <Logo/>
-            <Spacer/>
-            <MenuComponent menuLinks={aboutLinks}>
-                {t('about')}
-            </MenuComponent>
-            <NavButton href={'/contact'}>
-                {t('contact')}
-            </NavButton>
-            <MenuComponent menuLinks={menuLinks}>
-                {t('languages')}
-            </MenuComponent>
-        </HStack>
+        <Box d={['None', 'None', 'None', 'Block']}>
+            <HStack
+                margin={'2rem'}
+                align={'center'}
+                spacing={'0'}
+            >
+                <Logo/>
+                <Spacer/>
+                <MenuComponent menuLinks={aboutLinks}>
+                    {t('about')}
+                </MenuComponent>
+                <NavButton href={'/contact'}>
+                    {t('contact')}
+                </NavButton>
+                <MenuComponent menuLinks={menuLinks}>
+                    {t('languages')}
+                </MenuComponent>
+            </HStack>
+        </Box>
     );
 }
 

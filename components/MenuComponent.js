@@ -11,7 +11,7 @@ function MenuComponent(props) {
                 <MenuButton
                     as={Button}
                     size={'lg'}
-                    minW={'8rem'}
+                    minW={'10rem'}
                     color={'brand.800'}
                     colorScheme={'brand'}
                     variant={'ghost'}
@@ -22,7 +22,7 @@ function MenuComponent(props) {
                         {props.children}
                     </CaptionText>
                 </MenuButton>
-                <MenuList bg={'brand.100'}>
+                <MenuList bg={'brand.100'} minW={'10rem'}>
                     {props.menuLinks.map((link, index) => (
                         <NextLink href={link.href} locale={link.locale} key={index}>
                             <MenuItem _hover={{ bg: 'brand.50' }}>
