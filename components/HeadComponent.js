@@ -2,7 +2,7 @@ import useTranslation from 'next-translate/useTranslation';
 import NextHead from 'next/head';
 
 function HeadComponent(props) {
-    const { t, lang } = useTranslation('common');
+    const { t } = useTranslation('common');
 
     return (
         <>
