@@ -20,7 +20,7 @@ const theme = extendTheme({
     fonts: {
         heading: 'Ubuntu',
         zhCaption: 'Ma Shan Zheng',
-        zhBody: 'Noto Serif SC',
+        zhBody: 'Large',
     },
     components: {
         Menu: {
@@ -55,7 +55,7 @@ const theme = extendTheme({
         },
         zhBody: {
             fontFamily: 'zhBody',
-            fontSize: 'xl',
+            fontSize: '2xl',
         },
     },
 });

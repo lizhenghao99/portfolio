@@ -5,11 +5,13 @@ import '@fontsource/noto-serif-sc';
 import '@fontsource/ubuntu/500.css';
 import HeadComponent from '../components/HeadComponent';
 import Layout from '../components/Layout';
+import Fonts from '../themes/Fonts';
 import theme from '../themes/theme';
 
 const MyApp = ({ Component, pageProps }) => {
     return (
         <ChakraProvider theme={theme}>
+            <Fonts/>
             <HeadComponent/>
             <Layout>
                 <Component {...pageProps} />
