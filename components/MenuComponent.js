@@ -4,10 +4,10 @@ import NextLink from 'next/link';
 import BodyText from './BodyText';
 import CaptionText from './CaptionText';
 
-function MenuComponent(props) {
+const MenuComponent = (props) => {
     return (
         <>
-            <Menu autoSelect={false}>
+            <Menu autoSelect={true} {...props}>
                 <MenuButton
                     as={Button}
                     size={'lg'}
@@ -25,7 +25,7 @@ function MenuComponent(props) {
                 <MenuList bg={'brand.100'} minW={'10rem'}>
                     {props.menuLinks.map((link, index) => (
                         <NextLink href={link.href} locale={link.locale} key={index}>
-                            <MenuItem _hover={{ bg: 'brand.50' }}>
+                            <MenuItem _hover={{ bg: 'brand.50' }} _focus={{ bg: 'brand.50' }}>
                                 <BodyText>
                                     {link.text}
                                 </BodyText>
@@ -36,6 +36,6 @@ function MenuComponent(props) {
             </Menu>
         </>
     );
-}
+};
 
 export default MenuComponent;

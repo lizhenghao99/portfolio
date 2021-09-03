@@ -2,7 +2,8 @@ import { Spacer, VStack } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import CaptionText from '../../components/CaptionText';
 
-function Jiusi(props) {
+
+const Jiusi = (props) => {
     const { t } = useTranslation('common');
     return (
         <VStack ml={'10rem'} my={'5rem'} align={'left'}>
@@ -15,6 +16,6 @@ function Jiusi(props) {
             </CaptionText>
         </VStack>
     );
-}
+};
 
 export default Jiusi;

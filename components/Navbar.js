@@ -5,7 +5,8 @@ import Logo from './Logo';
 import MenuComponent from './MenuComponent';
 import NavButton from './NavButton';
 
-function Navbar(props) {
+
+const Navbar = (props) => {
     const { pathname, locale } = useRouter();
     const { t } = useTranslation('common');
     const menuLinks = [
@@ -36,27 +37,45 @@ function Navbar(props) {
         },
     ];
 
+    const projectLinks = [
+        {
+            text: t('tom'),
+            href: '/project',
+        },
+        {
+            text: t('project-tower'),
+            href: '/project/project-tower',
+        },
+    ];
+
+    const desktopNav = (
+        <HStack
+            margin={'2rem'}
+            align={'center'}
+            spacing={'0'}
+        >
+            <Logo/>
+            <Spacer/>
+            <MenuComponent menuLinks={aboutLinks}>
+                {t('about')}
+            </MenuComponent>
+            <MenuComponent menuLinks={projectLinks}>
+                {t('project')}
+            </MenuComponent>
+            <NavButton href={'/contact'}>
+                {t('contact')}
+            </NavButton>
+            <MenuComponent menuLinks={menuLinks} autoSelect={false}>
+                {t('languages')}
+            </MenuComponent>
+        </HStack>
+    );
+
     return (
         <Box d={['None', 'None', 'None', 'Block']}>
-            <HStack
-                margin={'2rem'}
-                align={'center'}
-                spacing={'0'}
-            >
-                <Logo/>
-                <Spacer/>
-                <MenuComponent menuLinks={aboutLinks}>
-                    {t('about')}
-                </MenuComponent>
-                <NavButton href={'/contact'}>
-                    {t('contact')}
-                </NavButton>
-                <MenuComponent menuLinks={menuLinks}>
-                    {t('languages')}
-                </MenuComponent>
-            </HStack>
+            {desktopNav}
         </Box>
     );
-}
+};
 
 export default Navbar;

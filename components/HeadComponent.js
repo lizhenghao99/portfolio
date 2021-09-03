@@ -1,7 +1,7 @@
 import useTranslation from 'next-translate/useTranslation';
 import NextHead from 'next/head';
 
-function HeadComponent(props) {
+const HeadComponent = (props) => {
     const { t } = useTranslation('common');
 
     return (
@@ -21,6 +21,6 @@ function HeadComponent(props) {
             </NextHead>
         </>
     );
-}
+};
 
 export default HeadComponent;

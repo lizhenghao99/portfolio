@@ -1,6 +1,6 @@
 import { Center, Heading } from '@chakra-ui/react';
 
-function Home(props) {
+const Home = (props) => {
     return (
         <>
             <Center h={'100%'} mt={'17rem'}>
@@ -10,6 +10,6 @@ function Home(props) {
             </Center>
         </>
     );
-}
+};
 
 export default Home;

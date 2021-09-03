@@ -2,7 +2,7 @@ import { Heading } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import NavButton from './NavButton';
 
-function Logo(props) {
+const Logo = (props) => {
     return (
         <NextLink href={'/'} passHref>
             <NavButton>
@@ -12,6 +12,6 @@ function Logo(props) {
             </NavButton>
         </NextLink>
     );
-}
+};
 
 export default Logo;

@@ -7,7 +7,7 @@ import HeadComponent from '../components/HeadComponent';
 import Layout from '../components/Layout';
 import theme from '../themes/theme';
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
     return (
         <ChakraProvider theme={theme}>
             <HeadComponent/>
@@ -16,6 +16,6 @@ function MyApp({ Component, pageProps }) {
             </Layout>
         </ChakraProvider>
     );
-}
+};
 
 export default MyApp;

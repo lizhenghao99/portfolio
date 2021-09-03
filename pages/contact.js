@@ -1,8 +1,8 @@
-function Contact(props) {
+const Contact = (props) => {
     return (
         <>
         </>
     );
-}
+};
 
 export default Contact;

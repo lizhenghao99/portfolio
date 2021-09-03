@@ -2,12 +2,12 @@ import { Button } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import CaptionText from './CaptionText';
 
-function NavButton(props) {
+const NavButton = (props) => {
     return (
         <NextLink href={props.href}>
             <Button
                 size={'lg'}
-                minW={'8rem'}
+                minW={'10rem'}
                 color={'brand.800'}
                 colorScheme={'brand'}
                 variant={'ghost'}
@@ -20,6 +20,6 @@ function NavButton(props) {
             </Button>
         </NextLink>
     );
-}
+};
 
 export default NavButton;
