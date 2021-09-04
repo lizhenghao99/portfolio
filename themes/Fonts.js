@@ -7,7 +7,7 @@ const Fonts = (props) => {
                 @font-face {
                     font-family: 'Large';
                     src: url('/fonts/Large.ttf') format('truetype');
-                  }
+                }
       `}
         />
     );

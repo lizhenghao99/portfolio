@@ -1,22 +1,22 @@
 import { Button } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import CaptionText from './CaptionText';
+import ButtonText from './ButtonText';
 
 const NavButton = (props) => {
     return (
         <NextLink href={props.href}>
             <Button
                 size={'lg'}
-                minW={'10rem'}
+                minW={'11rem'}
                 color={'brand.800'}
                 colorScheme={'brand'}
                 variant={'ghost'}
                 _focus={{ outline: 'None' }}
                 {...props}
             >
-                <CaptionText color={'brand.800'}>
+                <ButtonText color={'brand.800'}>
                     {props.children}
-                </CaptionText>
+                </ButtonText>
             </Button>
         </NextLink>
     );

@@ -1,5 +1,5 @@
 {
-  "languages": "languages",
+  "languages": "Languages",
   "title": "2StackStudio",
   "about": "About",
   "studio": "The Studio",
@@ -7,11 +7,15 @@
   "jiusi": "Jiusi Li",
   "contact": "Contact",
   "studio-name": "Studio",
-  "studio-intro-1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA undergrads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in indie game community.",
-  "studio-intro-2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative combat and meaningful progression.",
+  "studio-intro": {
+    "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA undergrads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in indie game community.",
+    "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative combat and meaningful progression."
+  },
+  "us": "Us",
   "tech-stack": "the tech stack",
   "art-stack": "the art stack",
   "project": "Project",
   "tom": "Throne of Mortals",
-  "project-tower": "Project Tower"
+  "project-tower": "Project Tower",
+  "learn-more": "Learn More"
 }

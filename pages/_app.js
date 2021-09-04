@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
+import '@fontsource/crimson-text/400.css';
 import '@fontsource/ma-shan-zheng/400.css';
-import '@fontsource/noto-sans-sc';
-import '@fontsource/noto-serif-sc';
+import '@fontsource/montserrat/400.css';
 import '@fontsource/ubuntu/500.css';
 import HeadComponent from '../components/HeadComponent';
 import Layout from '../components/Layout';

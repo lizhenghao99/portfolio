@@ -16,11 +16,25 @@ const theme = extendTheme({
             '800': '#006a3b',
             '900': '#004c26',
         },
+        gray: {
+            '50': '#f3fdf9',
+            '100': '#eef8f4',
+            '200': '#eaf3ef',
+            '300': '#dde6e2',
+            '400': '#bac3bf',
+            '500': '#9ca5a1',
+            '600': '#737b78',
+            '700': '#5f6763',
+            '800': '#404844',
+            '900': '#1f2623',
+        },
     },
     fonts: {
         heading: 'Ubuntu',
         zhCaption: 'Ma Shan Zheng',
         zhBody: 'Large',
+        enCaption: 'Crimson Text',
+        enBody: 'Montserrat',
     },
     components: {
         Menu: {
@@ -43,19 +57,39 @@ const theme = extendTheme({
         },
     },
     textStyles: {
-        enCaption: {
+        enButton: {
+            fontFamily: 'enCaption',
+            fontSize: '2xl',
+        },
+        enMenu: {
+            fontFamily: 'enBody',
             fontSize: 'lg',
         },
+        zhButton: {
+            fontFamily: 'zhCaption',
+            fontSize: '2xl',
+        },
+        zhMenu: {
+            fontFamily: 'zhBody',
+            fontSize: '2xl',
+        },
+        enCaption: {
+            fontFamily: 'enCaption',
+            fontSize: ['3xl', '6xl'],
+        },
         enBody: {
-            fontSize: 'lg',
+            fontFamily: 'enBody',
+            fontSize: ['md', '2xl'],
+            lineHeight: ['2rem', '3rem'],
         },
         zhCaption: {
             fontFamily: 'zhCaption',
-            fontSize: 'xl',
+            fontSize: ['3xl', '5xl'],
         },
         zhBody: {
             fontFamily: 'zhBody',
-            fontSize: '2xl',
+            fontSize: ['md', '3xl'],
+            lineHeight: ['2rem', '3rem'],
         },
     },
 });
