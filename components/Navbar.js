@@ -72,9 +72,11 @@ const Navbar = (props) => {
     );
 
     return (
-        <Box d={['None', 'None', 'None', 'Block']}>
-            {desktopNav}
-        </Box>
+        <>
+            <Box d={['None', 'None', 'None', 'Block']}>
+                {desktopNav}
+            </Box>
+        </>
     );
 };
 
