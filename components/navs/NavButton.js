@@ -8,13 +8,12 @@ const NavButton = (props) => {
             <Button
                 size={'lg'}
                 minW={'11rem'}
-                color={'brand.800'}
                 colorScheme={'brand'}
                 variant={'ghost'}
                 _focus={{ outline: 'None' }}
                 {...props}
             >
-                <ButtonText color={'brand.800'}>
+                <ButtonText>
                     {props.children}
                 </ButtonText>
             </Button>

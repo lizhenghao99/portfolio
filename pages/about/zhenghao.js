@@ -17,7 +17,7 @@ const Zhenghao = (props) => {
             </CaptionText>
             <Spacer minH={'4rem'}/>
             <AspectRatio maxW={'20rem'} ratio={4 / 3}>
-                <NextImage src={'/images/work-profile-wide.jpg'} layout={'fill'} quality={'50'}/>
+                <NextImage src={'/media/work-profile-wide.jpg'} layout={'fill'} quality={'50'}/>
             </AspectRatio>
         </StackComponent>
     );

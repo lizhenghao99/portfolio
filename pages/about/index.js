@@ -19,13 +19,13 @@ const Index = (props) => {
                     <Box minH={'3rem'}/>
                     {t('about-page.studio.body.l2')}
                 </BodyText>
-                <Spacer minH={'2rem'}/>
+                <Spacer minH={'3rem'}/>
                 <CaptionText>
                     {t('about-page.us.caption')}
                 </CaptionText>
                 <StackComponent
                     direction={['column', 'column', 'column', 'row']}
-                    spacing={'10%'}
+                    spacing={['10%', '10%', '5%', '7%', '10%']}
                     align={'center'}
                     divider={<StackDivider borderColor={'gray.400'}/>}
                 >

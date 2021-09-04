@@ -15,8 +15,8 @@ const IndexDescriptionStack = (props) => {
         >
             <CaptionText
                 fontSize={{
-                    en: ['lg', '6xl'],
-                    zh: ['lg', '5xl'],
+                    en: ['4xl', '6xl'],
+                    zh: ['3xl', '5xl'],
                 }}
             >
                 {captionText}
@@ -26,7 +26,7 @@ const IndexDescriptionStack = (props) => {
                     key={index}
                     fontSize={{
                         en: ['lg', '1.4rem'],
-                        zh: ['lg', '1.6rem'],
+                        zh: ['xl', '1.6rem'],
                     }}
                 >
                     {text}

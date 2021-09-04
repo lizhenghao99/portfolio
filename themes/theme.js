@@ -1,6 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
+    initialColorMode: 'light',
+    useSystemColorMode: false,
     colors: {
         white: '#F8F4ED',
         black: '#1F2623',
@@ -31,8 +33,8 @@ const theme = extendTheme({
     },
     fonts: {
         heading: 'Ubuntu',
-        zhCaption: 'Ma Shan Zheng',
-        zhBody: 'Large',
+        zhCaption: 'Zh Caption',
+        zhBody: 'Zh Body',
         enCaption: 'Crimson Text',
         enBody: 'Montserrat',
     },
@@ -88,8 +90,8 @@ const theme = extendTheme({
         },
         zhBody: {
             fontFamily: 'zhBody',
-            fontSize: ['md', '3xl'],
-            lineHeight: ['2rem', '3rem'],
+            fontSize: ['lg', '3xl'],
+            lineHeight: ['2.5rem', '3.5rem'],
         },
     },
 });

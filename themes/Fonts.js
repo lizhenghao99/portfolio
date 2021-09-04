@@ -5,8 +5,12 @@ const Fonts = (props) => {
         <Global
             styles={`
                 @font-face {
-                    font-family: 'Large';
-                    src: url('/fonts/Large.ttf') format('truetype');
+                    font-family: 'Zh Caption';
+                    src: url('/fonts/ZhTitleSoft.ttf') format('truetype');
+                }
+                @font-face {
+                    font-family: 'Zh Body';
+                    src: url('/fonts/ZhBody.ttf') format('truetype');
                 }
       `}
         />

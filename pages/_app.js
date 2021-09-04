@@ -1,6 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import '@fontsource/crimson-text/400.css';
-import '@fontsource/ma-shan-zheng/400.css';
 import '@fontsource/montserrat/400.css';
 import '@fontsource/ubuntu/500.css';
 import Layout from '../components/layouts/Layout';

@@ -32,12 +32,34 @@
     "studio": {
       "caption": "Studio",
       "body": {
-        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA undergrads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in indie game community.",
+        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA grads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in indie game community.",
         "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative combat and meaningful progression."
       }
     },
     "us": {
       "caption": "Us"
+    }
+  },
+  "project-page": {
+    "project-tower": {
+      "banner": {
+        "l1": "Project Tower",
+        "l2": "A prototype demo of our first attempt at Throne of Mortals"
+      },
+      "card": {
+        "caption": "Card-based Combat",
+        "body": {
+          "l1": "Immerse in real-time strategic combat while simultaneously controlling up to three heroes.",
+          "l2": "Master a variety of heroes, each with their unique mechanics under the flow of RPG style dual resource management."
+        }
+      },
+      "minion": {
+        "caption": "Summon Minions",
+        "body": {
+          "l1": "Summon a variety of powerful minions from artificial constructs to mythical creatures.",
+          "l2": "Taunt, charge, guard, ambush. Every minion has their unique role and behavior to aid you in your battles."
+        }
+      }
     }
   }
 }

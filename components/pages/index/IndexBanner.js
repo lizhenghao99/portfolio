@@ -1,8 +1,8 @@
 import { Box } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import feature from '../../../public/images/feature.png';
-import ImageBanner from '../../images/ImageBanner';
 import StackComponent from '../../layouts/StackComponent';
+import ImageBanner from '../../media/ImageBanner';
 import CaptionText from '../../texts/CaptionText';
 
 const IndexBanner = (props) => {

@@ -8,13 +8,12 @@ const ActionButton = (props) => {
             <Button
                 size={'lg'}
                 minW={'5rem'}
-                color={'brand.800'}
                 colorScheme={'brand'}
                 variant={'outline'}
                 _focus={{ outline: 'None' }}
                 {...props}
             >
-                <ButtonText color={'brand.800'}>
+                <ButtonText>
                     {props.children}
                 </ButtonText>
             </Button>

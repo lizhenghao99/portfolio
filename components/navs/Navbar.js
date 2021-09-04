@@ -2,6 +2,8 @@ import { Box, HStack, Spacer } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
 import Logo from '../texts/Logo';
+import ColorModeButton from './ColorModeButton';
+import LanguageButton from './LanguageButton';
 import MenuComponent from './MenuComponent';
 import NavButton from './NavButton';
 
@@ -9,18 +11,6 @@ import NavButton from './NavButton';
 const Navbar = (props) => {
     const { pathname, locale } = useRouter();
     const { t } = useTranslation('common');
-    const menuLinks = [
-        {
-            text: 'English',
-            href: pathname,
-            locale: 'en',
-        },
-        {
-            text: '中文',
-            href: pathname,
-            locale: 'zh',
-        },
-    ];
 
     const aboutLinks = [
         {
@@ -65,9 +55,8 @@ const Navbar = (props) => {
             <NavButton href={'/contact'}>
                 {t('contact')}
             </NavButton>
-            <MenuComponent menuLinks={menuLinks} autoSelect={false}>
-                {t('languages')}
-            </MenuComponent>
+            <LanguageButton/>
+            <ColorModeButton/>
         </HStack>
     );
 
