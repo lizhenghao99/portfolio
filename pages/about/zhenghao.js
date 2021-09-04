@@ -1,8 +1,8 @@
 import { AspectRatio, Spacer } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import NextImage from 'next/image';
-import CaptionText from '../../components/CaptionText';
-import StackComponent from '../../components/StackComponent';
+import StackComponent from '../../components/layouts/StackComponent';
+import CaptionText from '../../components/texts/CaptionText';
 
 const Zhenghao = (props) => {
     const { t } = useTranslation('common');

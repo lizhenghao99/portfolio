@@ -9,7 +9,8 @@ const TextBlock = (props) => {
                 my={['2rem', '5rem']}
                 maxW={'60rem'}
                 align={'left'}
-                {...props}>
+                {...props}
+            >
                 {props.children}
             </StackComponent>
         </Center>

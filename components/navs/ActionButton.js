@@ -1,16 +1,16 @@
 import { Button } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import ButtonText from './ButtonText';
+import ButtonText from '../texts/ButtonText';
 
-const NavButton = (props) => {
+const ActionButton = (props) => {
     return (
         <NextLink href={props.href}>
             <Button
                 size={'lg'}
-                minW={'11rem'}
+                minW={'5rem'}
                 color={'brand.800'}
                 colorScheme={'brand'}
-                variant={'ghost'}
+                variant={'outline'}
                 _focus={{ outline: 'None' }}
                 {...props}
             >
@@ -22,4 +22,4 @@ const NavButton = (props) => {
     );
 };
 
-export default NavButton;
+export default ActionButton;

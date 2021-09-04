@@ -1,10 +1,10 @@
 import { Box, Spacer, StackDivider } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
-import ActionButton from '../../components/ActionButton';
-import BodyText from '../../components/BodyText';
-import CaptionText from '../../components/CaptionText';
-import StackComponent from '../../components/StackComponent';
-import TextBlock from '../../components/TextBlock';
+import StackComponent from '../../components/layouts/StackComponent';
+import TextBlock from '../../components/layouts/TextBlock';
+import ActionButton from '../../components/navs/ActionButton';
+import BodyText from '../../components/texts/BodyText';
+import CaptionText from '../../components/texts/CaptionText';
 
 
 const Index = (props) => {
@@ -12,22 +12,22 @@ const Index = (props) => {
         return (
             <TextBlock spacing={'3rem'}>
                 <CaptionText>
-                    {t('studio-name')}
+                    {t('about-page.studio.caption')}
                 </CaptionText>
                 <BodyText>
-                    {t('studio-intro.l1')}
+                    {t('about-page.studio.body.l1')}
                     <Box minH={'3rem'}/>
-                    {t('studio-intro.l2')}
+                    {t('about-page.studio.body.l2')}
                 </BodyText>
                 <Spacer minH={'2rem'}/>
                 <CaptionText>
-                    {t('us')}
+                    {t('about-page.us.caption')}
                 </CaptionText>
                 <StackComponent
                     direction={['column', 'column', 'column', 'row']}
                     spacing={'10%'}
                     align={'center'}
-                    divider={<StackDivider borderColor={'gray.500'}/>}
+                    divider={<StackDivider borderColor={'gray.400'}/>}
                 >
                     <StackComponent direction={'column'} spacing={'3rem'} align={'stretch'}>
                         <BodyText>

@@ -1,6 +1,6 @@
 import { Heading } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import NavButton from './NavButton';
+import NavButton from '../navs/NavButton';
 
 const Logo = (props) => {
     return (

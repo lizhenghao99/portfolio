@@ -6,16 +6,38 @@
   "zhenghao": "Zhenghao Li",
   "jiusi": "Jiusi Li",
   "contact": "Contact",
-  "studio-name": "Studio",
-  "studio-intro": {
-    "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA undergrads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in indie game community.",
-    "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative combat and meaningful progression."
-  },
-  "us": "Us",
   "tech-stack": "the tech stack",
   "art-stack": "the art stack",
   "project": "Project",
   "tom": "Throne of Mortals",
   "project-tower": "Project Tower",
-  "learn-more": "Learn More"
+  "learn-more": "Learn More",
+  "index-page": {
+    "studio": {
+      "caption": "Our Studio",
+      "body": {
+        "l1": "Meet the two stacks behind 2StackStudio.",
+        "l2": "Find out why we’re here and what we’re doing."
+      }
+    },
+    "project": {
+      "caption": "Our Project",
+      "body": {
+        "l1": "Watch as we develop Throne of Mortals.",
+        "l2": "Check out the project and our current progress."
+      }
+    }
+  },
+  "about-page": {
+    "studio": {
+      "caption": "Studio",
+      "body": {
+        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA undergrads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in indie game community.",
+        "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative combat and meaningful progression."
+      }
+    },
+    "us": {
+      "caption": "Us"
+    }
+  }
 }

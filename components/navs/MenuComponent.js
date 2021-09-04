@@ -1,8 +1,8 @@
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { Button, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import ButtonText from './ButtonText';
-import MenuText from './MenuText';
+import ButtonText from '../texts/ButtonText';
+import MenuText from '../texts/MenuText';
 
 const MenuComponent = (props) => {
     return (

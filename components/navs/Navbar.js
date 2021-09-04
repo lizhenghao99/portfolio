@@ -1,7 +1,7 @@
 import { Box, HStack, Spacer } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
-import Logo from './Logo';
+import Logo from '../texts/Logo';
 import MenuComponent from './MenuComponent';
 import NavButton from './NavButton';
 
