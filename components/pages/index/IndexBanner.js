@@ -33,6 +33,7 @@ const IndexBanner = (props) => {
                         {t('tom')}
                     </CaptionText>
                     <CaptionText
+                        maxW={'90%'}
                         color={'white'}
                         fontSize={{
                             en: ['2xl', '2rem', '3rem', '4rem', '5rem'],

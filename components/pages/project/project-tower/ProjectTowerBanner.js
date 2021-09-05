@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
-import feature from '../../../../public/images/feature.png';
+import spell from '../../../../public/images/CastSpellSnapshot.png';
 import StackComponent from '../../../layouts/StackComponent';
 import ImageBanner from '../../../media/ImageBanner';
 import CaptionText from '../../../texts/CaptionText';
@@ -12,7 +12,7 @@ const ProjectTowerBanner = (props) => {
             <ImageBanner
                 ratio={[2, 2.4, 3]}
                 brightness={0.5}
-                src={feature}
+                src={spell}
                 width={3317}
                 height={1841}
                 quality={'50'}
@@ -33,6 +33,7 @@ const ProjectTowerBanner = (props) => {
                         {t('project-page.project-tower.banner.l1')}
                     </CaptionText>
                     <CaptionText
+                        maxW={'90%'}
                         color={'white'}
                         fontSize={{
                             en: ['lg', '2xl', '3xl', '4xl', '5xl'],

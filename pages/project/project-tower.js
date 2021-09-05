@@ -1,6 +1,7 @@
 import { Center, StackDivider } from '@chakra-ui/react';
 import StackComponent from '../../components/layouts/StackComponent';
 import ProjectTowerBanner from '../../components/pages/project/project-tower/ProjectTowerBanner';
+import ProjectTowerDownload from '../../components/pages/project/project-tower/ProjectTowerDownload';
 import ProjectTowerLeftRow from '../../components/pages/project/project-tower/ProjectTowerLeftRow';
 import ProjectTowerRightRow from '../../components/pages/project/project-tower/ProjectTowerRightRow';
 
@@ -22,6 +23,7 @@ const ProjectTower = (props) => {
                 spacing={vStackSpacing}
                 divider={<StackDivider borderColor={'gray.400'}/>}
             >
+                <ProjectTowerDownload/>
                 <Center>
                     <ProjectTowerLeftRow keyword={'card'} src={cardSrc}/>
                 </Center>

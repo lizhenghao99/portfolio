@@ -46,6 +46,13 @@
         "l1": "Project Tower",
         "l2": "A prototype demo of our first attempt at Throne of Mortals"
       },
+      "download": {
+        "caption": "Download and try out",
+        "body": {
+          "l1": "Download the desktop version for best experience.",
+          "l2": "The WebGL build is also available for convenience with limited graphics."
+        }
+      },
       "card": {
         "caption": "Card-based Combat",
         "body": {

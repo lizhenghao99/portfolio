@@ -20,7 +20,7 @@ const IndexProjectRow = (props) => {
                     t('index-page.project.body.l2'),
                 ]}
                 buttonText={t('learn-more')}
-                href={'/project'}
+                href={'/project/project-tower'}
             />
             <ImageComponent
                 ratio={1}
