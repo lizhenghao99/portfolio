@@ -59,6 +59,20 @@
           "l1": "Summon a variety of powerful minions from artificial constructs to mythical creatures.",
           "l2": "Taunt, charge, guard, ambush. Every minion has their unique role and behavior to aid you in your battles."
         }
+      },
+      "spell": {
+        "caption": "Cast Spells",
+        "body": {
+          "l1": "Cast an arsenal of arcane and creative spells to gain direct control over the battlefield.",
+          "l2": "From damage over time to crowd control, discover every hero’s specialties and their unique ways to impress the enemy."
+        }
+      },
+      "boss": {
+        "caption": "Powerful foes",
+        "body": {
+          "l1": "Fight against a wide range of enemies from powerful mythical monsters to vicious cult leaders, each with different movements and attacks.",
+          "l2": "Immerse in intense boss fights and defend yourself through multiple phases, learn their weaknesses and mechanics to turn the tide."
+        }
       }
     }
   }

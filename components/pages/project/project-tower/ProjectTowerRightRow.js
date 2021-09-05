@@ -4,12 +4,13 @@ import MultiColumnGrid from '../../../layouts/MultiColumnGrid';
 import VideoComponent from '../../../media/VideoComponent';
 import ProjectTowerDescriptionStack from './ProjectTowerDescriptionStack';
 
-const ProjectTowerMinionRow = (props) => {
+const ProjectTowerRightRow = (props) => {
     const { t } = useTranslation('common');
     const columns = [1, 1, 1, 2, 5];
     const templateColumns = columns.map((n) => (
         `repeat(${n}, 1fr)`
     ));
+    const { keyword, src } = props;
     return (
         <MultiColumnGrid
             templateColumns={templateColumns}
@@ -18,22 +19,20 @@ const ProjectTowerMinionRow = (props) => {
                 <VideoComponent
                     my={['2rem', '2rem', '2rem', '0']}
                     ratio={16 / 9}
-                    src="https://www.youtube.com/embed/rwc7dxAfh-U?controls=0&autoplay=1&mute=1&loop=1&playlist=rwc7dxAfh-U&modestbranding=1"
+                    src={src}
                 />
             </GridItem>
             <GridItem colSpan={[1, 1, 1, 1, 2]}>
                 <ProjectTowerDescriptionStack
-                    captionText={t('project-page.project-tower.minion.caption')}
+                    captionText={t(`project-page.project-tower.${keyword}.caption`)}
                     bodyText={[
-                        t('project-page.project-tower.minion.body.l1'),
-                        t('project-page.project-tower.minion.body.l2'),
+                        t(`project-page.project-tower.${keyword}.body.l1`),
+                        t(`project-page.project-tower.${keyword}.body.l2`),
                     ]}
-                    buttonText={t('learn-more')}
-                    href={'/project'}
                 />
             </GridItem>
         </MultiColumnGrid>
     );
 };
 
-export default ProjectTowerMinionRow;
+export default ProjectTowerRightRow;
