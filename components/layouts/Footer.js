@@ -1,6 +1,5 @@
-import { Center, useColorModeValue } from '@chakra-ui/react';
+import { Center, Stack, useColorModeValue } from '@chakra-ui/react';
 import BodyText from '../texts/BodyText';
-import StackComponent from './StackComponent';
 
 const Footer = (props) => {
     const bg = useColorModeValue('black', 'white');
@@ -12,7 +11,7 @@ const Footer = (props) => {
     ];
     return (
         <Center bg={bg}>
-            <StackComponent
+            <Stack
                 direction={['column', 'column', 'row']}
                 spacing={['0', '0', '4rem', '10rem']}
                 align={'center'}
@@ -31,7 +30,7 @@ const Footer = (props) => {
                         {text}
                     </BodyText>
                 ))}
-            </StackComponent>
+            </Stack>
         </Center>
     );
 };

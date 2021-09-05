@@ -1,10 +1,10 @@
 import { Center } from '@chakra-ui/react';
-import StackComponent from './StackComponent';
+import StackSkeleton from './StackSkeleton';
 
 const TextBlock = (props) => {
     return (
         <Center>
-            <StackComponent
+            <StackSkeleton
                 mx={['2rem', '5rem']}
                 my={['2rem', '5rem']}
                 maxW={'60rem'}
@@ -12,7 +12,7 @@ const TextBlock = (props) => {
                 {...props}
             >
                 {props.children}
-            </StackComponent>
+            </StackSkeleton>
         </Center>
     );
 };

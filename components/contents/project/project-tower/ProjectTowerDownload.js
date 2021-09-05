@@ -1,5 +1,5 @@
 import useTranslation from 'next-translate/useTranslation';
-import StackComponent from '../../../layouts/StackComponent';
+import StackSkeleton from '../../../layouts/StackSkeleton';
 import ItchComponent from '../../../media/ItchComponent';
 import BodyText from '../../../texts/BodyText';
 import CaptionText from '../../../texts/CaptionText';
@@ -12,7 +12,7 @@ const ProjectTowerDownload = (props) => {
         t('project-page.project-tower.download.body.l2'),
     ];
     return (
-        <StackComponent
+        <StackSkeleton
             direction={'column'}
             spacing={vStackSpacing}
             align={'center'}
@@ -40,7 +40,7 @@ const ProjectTowerDownload = (props) => {
                 </BodyText>
             ))}
             <ItchComponent maxW={'90%'} mb={vStackSpacing}/>
-        </StackComponent>
+        </StackSkeleton>
     );
 };
 

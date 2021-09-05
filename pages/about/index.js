@@ -1,6 +1,5 @@
-import { Box, Spacer, StackDivider } from '@chakra-ui/react';
+import { Box, Stack, StackDivider } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
-import StackComponent from '../../components/layouts/StackComponent';
 import TextBlock from '../../components/layouts/TextBlock';
 import ActionButton from '../../components/navs/ActionButton';
 import BodyText from '../../components/texts/BodyText';
@@ -19,17 +18,17 @@ const Index = (props) => {
                     <Box minH={['2rem', '3rem']}/>
                     {t('about-page.studio.body.l2')}
                 </BodyText>
-                <Spacer minH={['1rem', '3rem']}/>
+                <Box minH={['1rem', '3rem']}/>
                 <CaptionText>
                     {t('about-page.us.caption')}
                 </CaptionText>
-                <StackComponent
+                <Stack
                     direction={['column', 'column', 'column', 'row']}
                     spacing={['10%', '10%', '5%', '7%', '10%']}
                     align={'center'}
                     divider={<StackDivider borderColor={'gray.400'}/>}
                 >
-                    <StackComponent
+                    <Stack
                         direction={'column'}
                         spacing={['1rem', '3rem']}
                         align={'stretch'}>
@@ -43,8 +42,8 @@ const Index = (props) => {
                         <ActionButton href={'/about/zhenghao'}>
                             {t('learn-more')}
                         </ActionButton>
-                    </StackComponent>
-                    <StackComponent direction={'column'} spacing={'3rem'} align={'stretch'}>
+                    </Stack>
+                    <Stack direction={'column'} spacing={'3rem'} align={'stretch'}>
                         <BodyText>
                             {t('jiusi')}
                         </BodyText>
@@ -55,8 +54,8 @@ const Index = (props) => {
                         <ActionButton href={'/about/jiusi'}>
                             {t('learn-more')}
                         </ActionButton>
-                    </StackComponent>
-                </StackComponent>
+                    </Stack>
+                </Stack>
             </TextBlock>
         );
     }

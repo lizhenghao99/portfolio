@@ -1,5 +1,4 @@
-import { Box } from '@chakra-ui/react';
-import StackComponent from '../../layouts/StackComponent';
+import { Box, Stack } from '@chakra-ui/react';
 import ActionButton from '../../navs/ActionButton';
 import BodyText from '../../texts/BodyText';
 import CaptionText from '../../texts/CaptionText';
@@ -7,7 +6,7 @@ import CaptionText from '../../texts/CaptionText';
 const IndexDescriptionStack = (props) => {
     const { captionText, bodyText, buttonText, href, ...rest } = props;
     return (
-        <StackComponent
+        <Stack
             direction={'column'}
             spacing={'1.5rem'}
             align={'center'}
@@ -38,7 +37,7 @@ const IndexDescriptionStack = (props) => {
             >
                 {buttonText}
             </ActionButton>
-        </StackComponent>
+        </Stack>
     );
 };
 

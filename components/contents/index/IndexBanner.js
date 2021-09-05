@@ -1,7 +1,6 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import feature from '../../../public/images/feature.png';
-import StackComponent from '../../layouts/StackComponent';
 import ImageBanner from '../../media/ImageBanner';
 import CaptionText from '../../texts/CaptionText';
 
@@ -18,7 +17,7 @@ const IndexBanner = (props) => {
                 quality={'50'}
             />
             <Box position={'absolute'} top={'50%'} transform={'translateY(-50%)'} textAlign={'center'} w={'100%'}>
-                <StackComponent
+                <Stack
                     direction={'column'}
                     spacing={['0', '3rem', '4rem', '5rem']}
                     align={'center'}
@@ -42,7 +41,7 @@ const IndexBanner = (props) => {
                     >
                         {t('title')}
                     </CaptionText>
-                </StackComponent>
+                </Stack>
             </Box>
         </Box>
     );

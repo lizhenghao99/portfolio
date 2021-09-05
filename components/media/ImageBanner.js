@@ -10,8 +10,6 @@ const ImageBanner = (props) => {
         >
             <NextImage
                 src={props.src}
-                width={props.width}
-                height={props.height}
                 quality={props.quality}
                 layout={'fill'}
                 objectFit={'cover'}

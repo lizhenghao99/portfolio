@@ -10,8 +10,6 @@ const ImageComponent = (props) => {
         >
             <NextImage
                 src={src}
-                width={width}
-                height={height}
                 quality={quality}
                 layout={'fill'}
                 objectFit={'cover'}

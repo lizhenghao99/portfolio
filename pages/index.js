@@ -1,19 +1,18 @@
-import { Center, StackDivider } from '@chakra-ui/react';
-import StackComponent from '../components/layouts/StackComponent';
-import IndexBanner from '../components/pages/index/IndexBanner';
-import IndexProjectRow from '../components/pages/index/IndexProjectRow';
-import IndexStudioRow from '../components/pages/index/IndexStudioRow';
+import { Center, Stack, StackDivider } from '@chakra-ui/react';
+import IndexBanner from '../components/contents/index/IndexBanner';
+import IndexProjectRow from '../components/contents/index/IndexProjectRow';
+import IndexStudioRow from '../components/contents/index/IndexStudioRow';
 
 const Home = (props) => {
     const rowMaxWidth = '36rem';
     const vStackSpacing = '2rem';
     return (
-        <StackComponent
+        <Stack
             direction={'column'}
             spacing={'5rem'}
         >
             <IndexBanner/>
-            <StackComponent
+            <Stack
                 direction={'column'}
                 spacing={vStackSpacing}
                 divider={<StackDivider borderColor={'gray.400'}/>}
@@ -24,8 +23,8 @@ const Home = (props) => {
                 <Center mb={vStackSpacing}>
                     <IndexProjectRow rowMaxWidth={rowMaxWidth}/>
                 </Center>
-            </StackComponent>
-        </StackComponent>
+            </Stack>
+        </Stack>
     );
 };
 

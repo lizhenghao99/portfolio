@@ -1,9 +1,8 @@
-import { Center, StackDivider } from '@chakra-ui/react';
-import StackComponent from '../../components/layouts/StackComponent';
-import ProjectTowerBanner from '../../components/pages/project/project-tower/ProjectTowerBanner';
-import ProjectTowerDownload from '../../components/pages/project/project-tower/ProjectTowerDownload';
-import ProjectTowerLeftRow from '../../components/pages/project/project-tower/ProjectTowerLeftRow';
-import ProjectTowerRightRow from '../../components/pages/project/project-tower/ProjectTowerRightRow';
+import { Center, Stack, StackDivider } from '@chakra-ui/react';
+import ProjectTowerBanner from '../../components/contents/project/project-tower/ProjectTowerBanner';
+import ProjectTowerDownload from '../../components/contents/project/project-tower/ProjectTowerDownload';
+import ProjectTowerLeftRow from '../../components/contents/project/project-tower/ProjectTowerLeftRow';
+import ProjectTowerRightRow from '../../components/contents/project/project-tower/ProjectTowerRightRow';
 
 const ProjectTower = (props) => {
     const vStackSpacing = ['1rem', '5rem'];
@@ -13,12 +12,12 @@ const ProjectTower = (props) => {
     const bossSrc = 'https://www.youtube.com/embed/QLig3kXqlOs?controls=0&autoplay=1&mute=1&loop=1&playlist=QLig3kXqlOs&modestbranding=1';
 
     return (
-        <StackComponent
+        <Stack
             direction={'column'}
             spacing={['3rem', '5rem']}
         >
             <ProjectTowerBanner/>
-            <StackComponent
+            <Stack
                 direction={'column'}
                 spacing={vStackSpacing}
                 divider={<StackDivider borderColor={'gray.400'}/>}
@@ -36,8 +35,8 @@ const ProjectTower = (props) => {
                 <Center mb={vStackSpacing}>
                     <ProjectTowerRightRow keyword={'boss'} src={bossSrc}/>
                 </Center>
-            </StackComponent>
-        </StackComponent>
+            </Stack>
+        </Stack>
     );
 };
 

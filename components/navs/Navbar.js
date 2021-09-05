@@ -1,6 +1,5 @@
-import { Box, Spacer } from '@chakra-ui/react';
+import { Box, Spacer, Stack } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
-import StackComponent from '../layouts/StackComponent';
 import Logo from '../texts/Logo';
 import ColorModeButton from './ColorModeButton';
 import LanguageButton from './LanguageButton';
@@ -39,7 +38,7 @@ const Navbar = (props) => {
     ];
 
     const desktopNav = (
-        <StackComponent
+        <Stack
             direction={'row'}
             margin={'2rem'}
             align={'center'}
@@ -58,11 +57,11 @@ const Navbar = (props) => {
             </NavButton>
             <LanguageButton/>
             <ColorModeButton/>
-        </StackComponent>
+        </Stack>
     );
 
     const mobileNav = (
-        <StackComponent
+        <Stack
             direction={'row'}
             margin={'0.3rem'}
             align={'center'}
@@ -73,7 +72,7 @@ const Navbar = (props) => {
             <ColorModeButton size={'sm'}/>
             <LanguageButton size={'sm'} minW={'4.1rem'} leftIcon={null}/>
             <MainMenuButton/>
-        </StackComponent>
+        </Stack>
     );
 
     return (

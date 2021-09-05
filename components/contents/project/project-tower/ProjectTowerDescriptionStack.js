@@ -1,11 +1,11 @@
-import StackComponent from '../../../layouts/StackComponent';
+import { Stack } from '@chakra-ui/react';
 import BodyText from '../../../texts/BodyText';
 import CaptionText from '../../../texts/CaptionText';
 
 const ProjectTowerDescriptionStack = (props) => {
     const { captionText, bodyText, ...rest } = props;
     return (
-        <StackComponent
+        <Stack
             direction={'column'}
             spacing={'1rem'}
             align={'left'}
@@ -34,7 +34,7 @@ const ProjectTowerDescriptionStack = (props) => {
                     {text}
                 </BodyText>
             ))}
-        </StackComponent>
+        </Stack>
     );
 };
 
