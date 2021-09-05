@@ -1,15 +1,15 @@
-import { Box, HStack, Spacer } from '@chakra-ui/react';
+import { Box, Spacer } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
-import { useRouter } from 'next/router';
+import StackComponent from '../layouts/StackComponent';
 import Logo from '../texts/Logo';
 import ColorModeButton from './ColorModeButton';
 import LanguageButton from './LanguageButton';
+import MainMenuButton from './MainMenuButton';
 import MenuComponent from './MenuComponent';
 import NavButton from './NavButton';
 
 
 const Navbar = (props) => {
-    const { pathname, locale } = useRouter();
     const { t } = useTranslation('common');
 
     const aboutLinks = [
@@ -39,7 +39,8 @@ const Navbar = (props) => {
     ];
 
     const desktopNav = (
-        <HStack
+        <StackComponent
+            direction={'row'}
             margin={'2rem'}
             align={'center'}
             spacing={'0'}
@@ -57,13 +58,31 @@ const Navbar = (props) => {
             </NavButton>
             <LanguageButton/>
             <ColorModeButton/>
-        </HStack>
+        </StackComponent>
+    );
+
+    const mobileNav = (
+        <StackComponent
+            direction={'row'}
+            margin={'0.3rem'}
+            align={'center'}
+            spacing={'0'}
+        >
+            <Logo/>
+            <Spacer/>
+            <ColorModeButton size={'sm'}/>
+            <LanguageButton size={'sm'} minW={'4.1rem'} leftIcon={null}/>
+            <MainMenuButton/>
+        </StackComponent>
     );
 
     return (
         <>
             <Box d={['None', 'None', 'None', 'Block']}>
                 {desktopNav}
+            </Box>
+            <Box d={['Block', 'Block', 'Block', 'None']}>
+                {mobileNav}
             </Box>
         </>
     );

@@ -5,7 +5,7 @@ import BodyText from '../../../texts/BodyText';
 import CaptionText from '../../../texts/CaptionText';
 
 const ProjectTowerDownload = (props) => {
-    const vStackSpacing = '3rem';
+    const vStackSpacing = ['1rem', '3rem'];
     const { t } = useTranslation('common');
     const bodyText = [
         t('project-page.project-tower.download.body.l1'),
@@ -18,7 +18,7 @@ const ProjectTowerDownload = (props) => {
             align={'center'}
         >
             <CaptionText
-                maxW={'90%'}
+                maxW={'85%'}
                 fontSize={{
                     en: ['3xl', '5xl'],
                     zh: ['3xl', '5xl'],
@@ -30,7 +30,7 @@ const ProjectTowerDownload = (props) => {
             {bodyText.map((text, index) => (
                 <BodyText
                     key={index}
-                    maxW={'90%'}
+                    maxW={'85%'}
                     fontSize={{
                         en: ['lg', '2xl'],
                         zh: ['xl', '3xl'],

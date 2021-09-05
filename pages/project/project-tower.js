@@ -6,7 +6,7 @@ import ProjectTowerLeftRow from '../../components/pages/project/project-tower/Pr
 import ProjectTowerRightRow from '../../components/pages/project/project-tower/ProjectTowerRightRow';
 
 const ProjectTower = (props) => {
-    const vStackSpacing = '5rem';
+    const vStackSpacing = ['1rem', '5rem'];
     const cardSrc = 'https://www.youtube.com/embed/HlpF47M7T6c?controls=0&autoplay=1&mute=1&loop=1&playlist=HlpF47M7T6c&modestbranding=1';
     const minionSrc = 'https://www.youtube.com/embed/rwc7dxAfh-U?controls=0&autoplay=1&mute=1&loop=1&playlist=rwc7dxAfh-U&modestbranding=1';
     const spellSrc = 'https://www.youtube.com/embed/u_NgylF3niY?controls=0&autoplay=1&mute=1&loop=1&playlist=u_NgylF3niY&modestbranding=1';
@@ -15,7 +15,7 @@ const ProjectTower = (props) => {
     return (
         <StackComponent
             direction={'column'}
-            spacing={'5rem'}
+            spacing={['3rem', '5rem']}
         >
             <ProjectTowerBanner/>
             <StackComponent

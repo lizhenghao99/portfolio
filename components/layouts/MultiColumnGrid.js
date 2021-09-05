@@ -6,7 +6,7 @@ const MultiColumnGrid = (props) => {
             w={'100%'}
             mx={['1rem', '2rem', '5rem', '8rem']}
             templateColumns={props.templateColumns}
-            gap={'5rem'}
+            gap={['1rem', '5rem']}
             alignItems={'center'}
             {...props}
         >

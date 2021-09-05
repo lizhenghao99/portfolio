@@ -10,16 +10,16 @@ import CaptionText from '../../components/texts/CaptionText';
 const Index = (props) => {
         const { t } = useTranslation('common');
         return (
-            <TextBlock spacing={'3rem'}>
+            <TextBlock spacing={['2rem', '3rem']}>
                 <CaptionText>
                     {t('about-page.studio.caption')}
                 </CaptionText>
                 <BodyText>
                     {t('about-page.studio.body.l1')}
-                    <Box minH={'3rem'}/>
+                    <Box minH={['2rem', '3rem']}/>
                     {t('about-page.studio.body.l2')}
                 </BodyText>
-                <Spacer minH={'3rem'}/>
+                <Spacer minH={['1rem', '3rem']}/>
                 <CaptionText>
                     {t('about-page.us.caption')}
                 </CaptionText>
@@ -29,7 +29,10 @@ const Index = (props) => {
                     align={'center'}
                     divider={<StackDivider borderColor={'gray.400'}/>}
                 >
-                    <StackComponent direction={'column'} spacing={'3rem'} align={'stretch'}>
+                    <StackComponent
+                        direction={'column'}
+                        spacing={['1rem', '3rem']}
+                        align={'stretch'}>
                         <BodyText>
                             {t('zhenghao')}
                         </BodyText>
