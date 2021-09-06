@@ -1,9 +1,8 @@
-import { Box, Spacer, Stack } from '@chakra-ui/react';
+import { Spacer, Stack, useBreakpointValue } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import Logo from '../texts/Logo';
 import ColorModeButton from './ColorModeButton';
 import LanguageButton from './LanguageButton';
-import MainMenuButton from './MainMenuButton';
 import MenuComponent from './MenuComponent';
 import NavButton from './NavButton';
 import NavDrawer from './NavDrawer';
@@ -11,6 +10,7 @@ import NavDrawer from './NavDrawer';
 
 const Navbar = (props) => {
     const { t } = useTranslation('common');
+    const mobile = useBreakpointValue({ base: true, lg: false });
 
     const aboutLinks = [
         {
@@ -73,19 +73,14 @@ const Navbar = (props) => {
             <Spacer/>
             <ColorModeButton size={'sm'}/>
             <LanguageButton size={'sm'} minW={'4.1rem'} leftIcon={null}/>
-            <MainMenuButton/>
+            {/*<MainMenuButton/>*/}
             <NavDrawer/>
         </Stack>
     );
 
     return (
         <>
-            <Box d={['None', 'None', 'None', 'Block']}>
-                {desktopNav}
-            </Box>
-            <Box d={['Block', 'Block', 'Block', 'None']}>
-                {mobileNav}
-            </Box>
+            {mobile ? mobileNav : desktopNav}
         </>
     );
 };

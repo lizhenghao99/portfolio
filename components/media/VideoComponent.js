@@ -6,7 +6,7 @@ const VideoComponent = (props) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     return (
-        <Skeleton isLoaded={isLoaded} fadeDuration={3} startColor={'gray.50'} endColor={'gray.300'}>
+        <Skeleton isLoaded={isLoaded} fadeDuration={2} startColor={'gray.50'} endColor={'gray.300'}>
             <AspectRatio
                 ratio={ratio}
                 {...rest}

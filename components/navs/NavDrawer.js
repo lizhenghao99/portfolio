@@ -1,4 +1,5 @@
 import {
+    Button,
     Drawer,
     DrawerBody,
     DrawerContent,
@@ -8,10 +9,12 @@ import {
     Icon,
     IconButton,
     Spacer,
+    Stack,
     useColorModeValue,
     useDisclosure,
 } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
+import NextLink from 'next/link';
 import { IoClose, IoMenu } from 'react-icons/io5';
 import CaptionText from '../texts/CaptionText';
 
@@ -22,6 +25,33 @@ const NavDrawer = (props) => {
     const { t } = useTranslation('common');
     const { isOpen, onOpen, onClose } = useDisclosure();
     const { onClick, ...rest } = props;
+
+    const menuList = [
+        {
+            text: t('studio'),
+            href: '/about',
+        },
+        {
+            text: t('zhenghao'),
+            href: '/about/zhenghao',
+        },
+        {
+            text: t('jiusi'),
+            href: '/about/jiusi',
+        },
+        {
+            text: t('tom'),
+            href: '/project',
+        },
+        {
+            text: t('project-tower'),
+            href: '/project/project-tower',
+        },
+        {
+            text: t('contact'),
+            href: '/contact',
+        },
+    ];
 
     return (
         <>
@@ -43,7 +73,10 @@ const NavDrawer = (props) => {
                 <DrawerContent>
                     <Flex>
                         <DrawerHeader
-                            borderBottomWidth="1px"
+                            px={'1rem'}
+                            py={'0.25rem'}
+                            fontFamily={'Ubuntu'}
+                            fontSize={'3xl'}
                             minW={'15rem'}
                         >
                             2StackStudio
@@ -65,9 +98,25 @@ const NavDrawer = (props) => {
                         />
                     </Flex>
                     <DrawerBody>
-                        <CaptionText>Some contents...</CaptionText>
-                        <CaptionText>Some contents...</CaptionText>
-                        <CaptionText>Some contents...</CaptionText>
+                        <Stack direction={'column'}>
+                            {menuList.map((link, index) => (
+                                <NextLink href={link.href} key={index}>
+                                    <Button
+                                        onClick={() => setTimeout(onClose, 200)}
+                                        size={'md'}
+                                        color={color}
+                                        colorScheme={'brand'}
+                                        variant={'ghost'}
+                                        sx={{ '-webkit-tap-highlight-color': 'transparent' }}
+                                        _hover={{ bg: hover }}
+                                        _focus={{ bg: hover }}>
+                                        <CaptionText fontSize={{ en: '2xl', zh: '2xl' }}>
+                                            {link.text}
+                                        </CaptionText>
+                                    </Button>
+                                </NextLink>
+                            ))}
+                        </Stack>
                     </DrawerBody>
                 </DrawerContent>
             </Drawer>
