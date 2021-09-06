@@ -19,7 +19,7 @@ const ItchComponent = (props) => {
 
     return (
         <Center {...props}>
-            <Skeleton isLoaded={isLoaded}>
+            <Skeleton isLoaded={isLoaded} fadeDuration={2} startColor={'gray.50'} endColor={'gray.300'}>
                 {widget}
             </Skeleton>
         </Center>
