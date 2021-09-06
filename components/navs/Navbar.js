@@ -80,7 +80,8 @@ const Navbar = (props) => {
 
     return (
         <>
-            {mobile ? mobileNav : desktopNav}
+            {mobile && mobileNav}
+            {!mobile && desktopNav}
         </>
     );
 };
