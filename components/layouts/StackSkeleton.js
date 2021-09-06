@@ -5,7 +5,7 @@ import StackLoaded from './StackLoaded';
 const StackSkeleton = (props) => {
     const [isLoaded, setIsLoaded] = useState(false);
     return (
-        <Skeleton isLoaded={isLoaded} fadeDuration={0.7} startColor={'white'} endColor={'gray.300'}>
+        <Skeleton isLoaded={isLoaded} fadeDuration={1} startColor={'white'} endColor={'gray.300'}>
             <StackLoaded
                 onLoaded={() => setIsLoaded(true)}
                 {...props}

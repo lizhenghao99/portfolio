@@ -1,5 +1,6 @@
 import { Center, Skeleton } from '@chakra-ui/react';
 import { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 const ItchComponent = (props) => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -18,11 +19,13 @@ const ItchComponent = (props) => {
     );
 
     return (
-        <Center {...props}>
-            <Skeleton isLoaded={isLoaded} fadeDuration={2} startColor={'gray.50'} endColor={'gray.300'}>
-                {widget}
-            </Skeleton>
-        </Center>
+        <Fade>
+            <Center {...props}>
+                <Skeleton isLoaded={isLoaded} fadeDuration={2} startColor={'gray.50'} endColor={'gray.300'}>
+                    {widget}
+                </Skeleton>
+            </Center>
+        </Fade>
     )
         ;
 };

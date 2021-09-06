@@ -49,8 +49,8 @@
       "download": {
         "caption": "Download and try out",
         "body": {
-          "l1": "Download the desktop version for best experience.",
-          "l2": "The WebGL build is also available for convenience with limited graphics."
+          "l1": "Download desktop version for best experience.",
+          "l2": "WebGL build is also available for convenience with limited graphics."
         }
       },
       "card": {

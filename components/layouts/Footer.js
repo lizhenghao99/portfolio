@@ -10,7 +10,7 @@ const Footer = (props) => {
         'twostackstudio@outlook.com',
     ];
     return (
-        <Center bg={bg}>
+        <Center bg={bg} mt={['1rem', '3rem']}>
             <Stack
                 direction={['column', 'column', 'row']}
                 spacing={['0', '0', '4rem', '10rem']}

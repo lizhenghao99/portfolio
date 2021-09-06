@@ -1,8 +1,7 @@
 import { Center, Stack, StackDivider, useBreakpointValue } from '@chakra-ui/react';
 import ProjectTowerBanner from '../../components/contents/project/project-tower/ProjectTowerBanner';
 import ProjectTowerDownload from '../../components/contents/project/project-tower/ProjectTowerDownload';
-import ProjectTowerLeftRow from '../../components/contents/project/project-tower/ProjectTowerLeftRow';
-import ProjectTowerRightRow from '../../components/contents/project/project-tower/ProjectTowerRightRow';
+import ProjectTowerRow from '../../components/contents/project/project-tower/ProjectTowerRow';
 
 const ProjectTower = (props) => {
     const vStackSpacing = ['1rem', '5rem'];
@@ -25,16 +24,32 @@ const ProjectTower = (props) => {
             >
                 {!mobile && <ProjectTowerDownload/>}
                 <Center>
-                    <ProjectTowerLeftRow keyword={'card'} src={cardSrc}/>
+                    <ProjectTowerRow
+                        placement={'left'}
+                        keyword={'card'}
+                        src={cardSrc}
+                    />
                 </Center>
                 <Center>
-                    <ProjectTowerRightRow keyword={'minion'} src={minionSrc}/>
+                    <ProjectTowerRow
+                        placement={mobile ? 'left' : 'right'}
+                        keyword={'minion'}
+                        src={minionSrc}
+                    />
                 </Center>
                 <Center>
-                    <ProjectTowerLeftRow keyword={'spell'} src={spellSrc}/>
+                    <ProjectTowerRow
+                        placement={'left'}
+                        keyword={'spell'}
+                        src={spellSrc}
+                    />
                 </Center>
                 <Center mb={vStackSpacing}>
-                    <ProjectTowerRightRow keyword={'boss'} src={bossSrc}/>
+                    <ProjectTowerRow
+                        placement={mobile ? 'left' : 'right'}
+                        keyword={'boss'}
+                        src={bossSrc}
+                    />
                 </Center>
             </Stack>
         </Stack>
