@@ -6,7 +6,7 @@ const Logo = (props) => {
     const color = useColorModeValue('brand.900', 'brand.50');
     return (
         <NextLink href={'/'} passHref>
-            <NavButton>
+            <NavButton px={['0.5rem', '0.5rem', '0.5rem', '2rem']}>
                 <Heading color={color}>
                     2StackStudio
                 </Heading>

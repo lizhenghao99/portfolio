@@ -54,7 +54,10 @@ const MainMenuButton = (props) => {
                     <MenuList bg={bg}>
                         {menuList.map((link, index) => (
                             <NextLink href={link.href} key={index}>
-                                <MenuItem _hover={{ bg: hover }} _focus={{ bg: hover }}>
+                                <MenuItem
+                                    sx={{ '-webkit-tap-highlight-color': 'transparent' }}
+                                    _hover={{ bg: hover }}
+                                    _focus={{ bg: hover }}>
                                     <MenuText>
                                         {link.text}
                                     </MenuText>

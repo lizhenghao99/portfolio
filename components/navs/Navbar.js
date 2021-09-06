@@ -6,6 +6,7 @@ import LanguageButton from './LanguageButton';
 import MainMenuButton from './MainMenuButton';
 import MenuComponent from './MenuComponent';
 import NavButton from './NavButton';
+import NavDrawer from './NavDrawer';
 
 
 const Navbar = (props) => {
@@ -63,7 +64,8 @@ const Navbar = (props) => {
     const mobileNav = (
         <Stack
             direction={'row'}
-            margin={'0.3rem'}
+            mx={['0.5rem', '1.5rem']}
+            my={'0.25rem'}
             align={'center'}
             spacing={'0'}
         >
@@ -72,6 +74,7 @@ const Navbar = (props) => {
             <ColorModeButton size={'sm'}/>
             <LanguageButton size={'sm'} minW={'4.1rem'} leftIcon={null}/>
             <MainMenuButton/>
+            <NavDrawer/>
         </Stack>
     );
 
