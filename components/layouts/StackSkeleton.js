@@ -1,17 +1,17 @@
 import { Skeleton } from '@chakra-ui/react';
 import { useState } from 'react';
-import StackNoSSR from './StackNoSSR';
+import StackLoaded from './StackLoaded';
 
 const StackSkeleton = (props) => {
     const [isLoaded, setIsLoaded] = useState(false);
     return (
-        <Skeleton isLoaded={isLoaded}>
-            <StackNoSSR
+        <Skeleton isLoaded={isLoaded} fadeDuration={0.7}>
+            <StackLoaded
                 onLoaded={() => setIsLoaded(true)}
                 {...props}
             >
                 {props.children}
-            </StackNoSSR>
+            </StackLoaded>
         </Skeleton>
     );
 };

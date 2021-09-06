@@ -1,19 +1,25 @@
-import { AspectRatio } from '@chakra-ui/react';
+import { AspectRatio, Skeleton } from '@chakra-ui/react';
+import { useState } from 'react';
 
 const VideoComponent = (props) => {
     const { ratio, src, ...rest } = props;
+    const [isLoaded, setIsLoaded] = useState(false);
+
     return (
-        <AspectRatio
-            ratio={ratio}
-            {...rest}
-        >
-            <iframe
-                src={src}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            />
-        </AspectRatio>
+        <Skeleton isLoaded={isLoaded}>
+            <AspectRatio
+                ratio={ratio}
+                {...rest}
+            >
+                <iframe
+                    onLoad={() => setIsLoaded(true)}
+                    src={src}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+            </AspectRatio>
+        </Skeleton>
     );
 };
 

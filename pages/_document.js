@@ -1,34 +1,35 @@
 // contents/_document.js
+// noinspection HtmlRequiredTitleElement
 
+import emotionCache from '/lib/emotion-cache';
 import theme from '/themes/theme';
 import { ColorModeScript } from '@chakra-ui/react';
-import { extractCritical } from '@emotion/server';
+import createEmotionServer from '@emotion/server/create-instance';
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
 
-export default class Document extends NextDocument {
-    static async getInitialProps({ renderPage }) {
-        const page = renderPage();
-        const styles = extractCritical(page.html);
-        return {
-            ...page,
-            ...styles,
-        };
-    }
+const { extractCritical } = createEmotionServer(emotionCache);
 
-    constructor(props) {
-        super(props);
-        const { __NEXT_DATA__, ids } = props;
-        if (ids) {
-            __NEXT_DATA__.ids = ids;
-        }
+export default class Document extends NextDocument {
+    static async getInitialProps(ctx) {
+        const initialProps = await NextDocument.getInitialProps(ctx);
+        const styles = extractCritical(initialProps.html);
+        return {
+            ...initialProps,
+            styles: [
+                initialProps.styles,
+                <style
+                    key="emotion-css"
+                    dangerouslySetInnerHTML={{ __html: styles.css }}
+                    data-emotion-css={styles.ids.join(' ')}
+                />,
+            ],
+        };
     }
 
     render() {
         return (
             <Html>
-                <Head>
-                    <style dangerouslySetInnerHTML={{ __html: this.props.css }}/>
-                </Head>
+                <Head/>
                 <body>
                 <ColorModeScript initialColorMode={theme.config.initialColorMode}/>
                 <Main/>
