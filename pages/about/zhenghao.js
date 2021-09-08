@@ -1,24 +1,39 @@
-import { AspectRatio, Spacer, Stack } from '@chakra-ui/react';
+import profile from '/public/images/zhenghao-profile.jpg';
 import useTranslation from 'next-translate/useTranslation';
-import NextImage from 'next/image';
-import CaptionText from '../../components/texts/CaptionText';
+import AboutBanner from '../../components/contents/about/AboutBanner';
+import DescriptionGrid from '../../components/layouts/description/DescriptionGrid';
 
 const Zhenghao = (props) => {
     const { t } = useTranslation('common');
+    const texts = [
+        {
+            captionText: t('about-page.studio.caption'),
+            bodyText: [
+                t('about-page.studio.body.l1'),
+                t('about-page.studio.body.l2'),
+            ],
+        },
+        {
+            captionText: t('about-page.studio.caption'),
+            bodyText: [
+                t('about-page.studio.body.l1'),
+                t('about-page.studio.body.l2'),
+            ],
+        },
+        {
+            captionText: t('about-page.studio.caption'),
+            bodyText: [
+                t('about-page.studio.body.l1'),
+                t('about-page.studio.body.l2'),
+            ],
+        },
+    ];
+
     return (
-        <Stack direction={'column'} ml={'10rem'} my={'5rem'} align={'left'}>
-            <CaptionText fontSize={{ en: '5xl', zh: '6xl' }}>
-                {t('zhenghao')}
-            </CaptionText>
-            <Spacer minH={'1rem'}/>
-            <CaptionText fontSize={{ en: '4xl', zh: '4xl' }}>
-                {t('tech-stack')}
-            </CaptionText>
-            <Spacer minH={'4rem'}/>
-            <AspectRatio maxW={'20rem'} ratio={4 / 3}>
-                <NextImage src={'/media/work-profile-wide.jpg'} layout={'fill'} quality={'50'}/>
-            </AspectRatio>
-        </Stack>
+        <>
+            <AboutBanner src={profile} title={t('tech-stack')} name={t('zhenghao')}/>
+            <DescriptionGrid column={3} texts={texts}/>
+        </>
     );
 };
 

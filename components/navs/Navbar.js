@@ -28,10 +28,10 @@ const Navbar = (props) => {
     ];
 
     const projectLinks = [
-        {
-            text: t('tom'),
-            href: '/project',
-        },
+        // {
+        //     text: t('tom'),
+        //     href: '/project',
+        // },
         {
             text: t('project-tower'),
             href: '/project/project-tower',

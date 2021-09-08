@@ -1,9 +1,9 @@
 import { GridItem } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import { Fade } from 'react-awesome-reveal';
+import DescriptionStack from '../../../layouts/description/DescriptionStack';
 import MultiColumnGrid from '../../../layouts/MultiColumnGrid';
 import VideoComponent from '../../../media/VideoComponent';
-import ProjectTowerDescriptionStack from './ProjectTowerDescriptionStack';
 
 const ProjectTowerRow = (props) => {
     const { t } = useTranslation('common');
@@ -19,7 +19,7 @@ const ProjectTowerRow = (props) => {
         >
             <GridItem colSpan={[1, 1, 1, 1, 2]}>
                 <Fade duration={fadeDuration}>
-                    <ProjectTowerDescriptionStack
+                    <DescriptionStack
                         captionText={t(`project-page.project-tower.${keyword}.caption`)}
                         bodyText={[
                             t(`project-page.project-tower.${keyword}.body.l1`),
@@ -54,7 +54,7 @@ const ProjectTowerRow = (props) => {
             </GridItem>
             <GridItem colSpan={[1, 1, 1, 1, 2]}>
                 <Fade duration={fadeDuration}>
-                    <ProjectTowerDescriptionStack
+                    <DescriptionStack
                         captionText={t(`project-page.project-tower.${keyword}.caption`)}
                         bodyText={[
                             t(`project-page.project-tower.${keyword}.body.l1`),

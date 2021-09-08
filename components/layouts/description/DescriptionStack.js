@@ -1,20 +1,19 @@
-import { Box, Stack } from '@chakra-ui/react';
-import ActionButton from '../../navs/ActionButton';
+import { Stack } from '@chakra-ui/react';
 import BodyText from '../../texts/BodyText';
 import CaptionText from '../../texts/CaptionText';
 
-const IndexDescriptionStack = (props) => {
-    const { captionText, bodyText, buttonText, href, ...rest } = props;
+const DescriptionStack = (props) => {
+    const { captionText, bodyText, ...rest } = props;
     return (
         <Stack
             direction={'column'}
-            spacing={'1.5rem'}
-            align={'center'}
+            spacing={'1rem'}
+            align={'left'}
             {...rest}
         >
             <CaptionText
                 fontSize={{
-                    en: ['4xl', '6xl'],
+                    en: ['3xl', '5xl'],
                     zh: ['3xl', '5xl'],
                 }}
             >
@@ -24,21 +23,19 @@ const IndexDescriptionStack = (props) => {
                 <BodyText
                     key={index}
                     fontSize={{
-                        en: ['lg', '1.4rem'],
+                        en: ['md', 'lg'],
                         zh: ['xl', '1.6rem'],
+                    }}
+                    lineHeight={{
+                        en: ['1.5rem', '2.5rem'],
+                        zh: ['2.5rem', '3.5rem'],
                     }}
                 >
                     {text}
                 </BodyText>
             ))}
-            <Box h={['0', '0', '0', '0', '2rem']}/>
-            <ActionButton
-                href={href}
-            >
-                {buttonText}
-            </ActionButton>
         </Stack>
     );
 };
 
-export default IndexDescriptionStack;
+export default DescriptionStack;

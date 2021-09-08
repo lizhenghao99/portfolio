@@ -1,8 +1,8 @@
 import useTranslation from 'next-translate/useTranslation';
 import { Fade } from 'react-awesome-reveal';
+import ButtonDescriptionStack from '../../layouts/description/ButtonDescriptionStack';
 import TwoColumnGrid from '../../layouts/TwoColumnGrid';
 import ImageComponent from '../../media/ImageComponent';
-import IndexDescriptionStack from './IndexDescriptionStack';
 
 const IndexRow = (props) => {
     const { t } = useTranslation('common');
@@ -10,7 +10,7 @@ const IndexRow = (props) => {
     const leftRow = (
         <Fade>
             <TwoColumnGrid>
-                <IndexDescriptionStack
+                <ButtonDescriptionStack
                     maxW={rowMaxWidth}
                     captionText={t(`index-page.${keyword}.caption`)}
                     bodyText={[
@@ -38,7 +38,7 @@ const IndexRow = (props) => {
                     quality={50}
                     maxW={rowMaxWidth}
                 />
-                <IndexDescriptionStack
+                <ButtonDescriptionStack
                     maxW={rowMaxWidth}
                     captionText={t(`index-page.${keyword}.caption`)}
                     bodyText={[

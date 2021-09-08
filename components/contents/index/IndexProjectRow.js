@@ -2,9 +2,9 @@ import logoBlack from '/public/images/logo-black.png';
 import logoWhite from '/public/images/logo-white.png';
 import { useColorModeValue } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
+import ButtonDescriptionStack from '../../layouts/description/ButtonDescriptionStack';
 import TwoColumnGrid from '../../layouts/TwoColumnGrid';
 import ImageComponent from '../../media/ImageComponent';
-import IndexDescriptionStack from './IndexDescriptionStack';
 
 const IndexProjectRow = (props) => {
     const { t } = useTranslation('common');
@@ -12,7 +12,7 @@ const IndexProjectRow = (props) => {
     const logo = useColorModeValue(logoBlack, logoWhite);
     return (
         <TwoColumnGrid>
-            <IndexDescriptionStack
+            <ButtonDescriptionStack
                 maxW={rowMaxWidth}
                 captionText={t('index-page.project.caption')}
                 bodyText={[
