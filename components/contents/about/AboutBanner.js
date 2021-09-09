@@ -18,15 +18,15 @@ const AboutBanner = (props) => {
                 />
                 <Box minH={'2rem'}/>
                 <CaptionText
-                    fontSize={{ en: ['3xl', '4xl'], zh: ['3xl', '4xl'] }}
+                    fontSize={{ en: ['2xl', '4xl'], zh: ['2xl', '4xl'] }}
                     color={'white'}
                     lineHeight={'1rem'}
                 >
                     {title}
                 </CaptionText>
-                {locale === 'zh' && <Box minH={'1.5rem'}/>}
+                {locale === 'zh' && <Box minH={['0.5rem', '1.5rem']}/>}
                 <CaptionText
-                    fontSize={{ en: ['5xl', '6xl'], zh: ['6xl', '4.5rem'] }}
+                    fontSize={{ en: ['4xl', '6xl'], zh: ['5xl', '4.5rem'] }}
                     color={'white'}
                 >
                     {name}
