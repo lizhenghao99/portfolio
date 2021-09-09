@@ -1,3 +1,4 @@
+import tower from '/public/images/Level0SnapshotSquare.png';
 import { Center, Stack, StackDivider, useBreakpointValue, useColorModeValue } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import IndexBanner from '../components/contents/index/IndexBanner';
@@ -38,7 +39,7 @@ const Home = (props) => {
                         rowMaxWidth={rowMaxWidth}
                         keyword={'project'}
                         ratio={1}
-                        src={logo}
+                        src={tower}
                         href={'/project/project-tower'}
                     />
                 </Center>

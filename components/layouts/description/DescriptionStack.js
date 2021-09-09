@@ -23,8 +23,8 @@ const DescriptionStack = (props) => {
                 <BodyText
                     key={index}
                     fontSize={{
-                        en: ['md', 'lg'],
-                        zh: ['xl', '1.6rem'],
+                        en: ['md', 'md', 'md', 'lg'],
+                        zh: ['xl', 'xl', 'xl', 'xl', '1.6rem'],
                     }}
                     lineHeight={{
                         en: ['1.5rem', '2.5rem'],

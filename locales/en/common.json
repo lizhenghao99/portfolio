@@ -104,5 +104,26 @@
         }
       }
     }
+  },
+  "contact-page": {
+    "caption": "Contact us",
+    "body": {
+      "l1": "twostackstudio@outlook.com",
+      "l2": "(206) 369-7158",
+      "l3": "1929 Beloit Ave",
+      "l4": "Los Angeles, CA 90025"
+    },
+    "form": {
+      "required": "Required",
+      "email-invalid": "Email is invalid",
+      "submit": "Send",
+      "submitted": "Success",
+      "name": "Name",
+      "name-placeholder": "Your Name",
+      "email": "Email",
+      "email-placeholder": "Your Email",
+      "message": "Message",
+      "message-placeholder": "Your message"
+    }
   }
 }

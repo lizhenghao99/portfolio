@@ -39,10 +39,10 @@ const NavDrawer = (props) => {
             text: t('jiusi'),
             href: '/about/jiusi',
         },
-        {
-            text: t('tom'),
-            href: '/project',
-        },
+        // {
+        //     text: t('tom'),
+        //     href: '/project',
+        // },
         {
             text: t('project-tower'),
             href: '/project/project-tower',

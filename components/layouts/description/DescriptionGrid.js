@@ -1,4 +1,5 @@
-import { Center, GridItem } from '@chakra-ui/react';
+import { Center, GridItem, useBreakpointValue } from '@chakra-ui/react';
+import { Fade } from 'react-awesome-reveal';
 import MultiColumnGrid from '../MultiColumnGrid';
 
 const DescriptionGrid = (props) => {
@@ -7,6 +8,8 @@ const DescriptionGrid = (props) => {
     const templateColumns = columns.map((n) => (
         `repeat(${n}, 1fr)`
     ));
+    const fadeDuration = useBreakpointValue({ base: 500, lg: 1000 });
+
 
     return (
         <Center>
@@ -17,11 +20,12 @@ const DescriptionGrid = (props) => {
                 {...rest}
             >
                 {contents.map((content, index) => (
-                    <GridItem
-                        key={index}
-                        colSpan={1}>
-                        {content}
-                    </GridItem>
+                    <Fade key={index} duration={fadeDuration}>
+                        <GridItem
+                            colSpan={1}>
+                            {content}
+                        </GridItem>
+                    </Fade>
                 ))}
             </MultiColumnGrid>
         </Center>
