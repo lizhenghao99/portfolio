@@ -2,8 +2,8 @@ import { Center, Stack, useColorModeValue } from '@chakra-ui/react';
 import BodyText from '../texts/BodyText';
 
 const Footer = (props) => {
-    const bg = useColorModeValue('black', 'white');
-    const color = useColorModeValue('white', 'black');
+    const bg = useColorModeValue('black', 'gray.700');
+    const color = useColorModeValue('white', 'white');
     const footerInfos = [
         '1929 Beloit Ave, Los Angeles',
         ' (206) 369-7158',

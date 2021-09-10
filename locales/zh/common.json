@@ -38,6 +38,28 @@
     },
     "us": {
       "caption": "我们"
+    },
+    "zhenghao": {
+      "left": {
+        "caption": "Lorem ipsum.",
+        "body": {
+          "l1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien massa, eget tristique metus sagittis non. Sed quis fringilla."
+        }
+      },
+      "mid": {
+        "caption": "Lorem ipsum.",
+        "body": {
+          "l1": "Phasellus semper lorem ut nulla faucibus vehicula.",
+          "l2": "Nunc mollis magna nec augue semper congue.",
+          "l3": "In sodales quam nec ligula gravida, sit amet vulputate massa blandit."
+        }
+      },
+      "right": {
+        "caption": "Lorem ipsum.",
+        "body": {
+          "l1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien massa, eget tristique metus sagittis non. Sed quis fringilla."
+        }
+      }
     }
   },
   "project-page": {
