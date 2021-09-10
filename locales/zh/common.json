@@ -96,6 +96,7 @@
       "email-invalid": "邮箱格式不正确",
       "submit": "发送",
       "submitted": "信息已发送",
+      "error": "发送失败",
       "name": "称呼",
       "name-placeholder": "您的称呼",
       "email": "邮箱",

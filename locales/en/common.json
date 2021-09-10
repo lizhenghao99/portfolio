@@ -118,6 +118,7 @@
       "email-invalid": "Email is invalid",
       "submit": "Send",
       "submitted": "Success",
+      "error": "Error",
       "name": "Name",
       "name-placeholder": "Your Name",
       "email": "Email",

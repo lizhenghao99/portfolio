@@ -31,7 +31,7 @@ const IndexRow = (props) => {
     );
     const rightRow = (
         <Fade>
-            <TwoColumnGrid>
+            <TwoColumnGrid spacingY={'2rem'}>
                 <ImageComponent
                     ratio={ratio}
                     src={src}
