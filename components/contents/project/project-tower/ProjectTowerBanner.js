@@ -1,6 +1,6 @@
 import { Box, Stack } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
-import spell from '../../../../public/images/CastSpellSnapshot.png';
+import spell from '../../../../public/images/NewSpellSnapshot.png';
 import ImageBanner from '../../../media/ImageBanner';
 import CaptionText from '../../../texts/CaptionText';
 

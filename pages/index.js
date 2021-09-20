@@ -1,4 +1,4 @@
-import tower from '/public/images/Level0SnapshotSquare.png';
+import tower from '/public/images/TutorialSnapshotSquare.png';
 import { Center, Stack, StackDivider, useBreakpointValue, useColorModeValue } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import IndexBanner from '../components/contents/index/IndexBanner';

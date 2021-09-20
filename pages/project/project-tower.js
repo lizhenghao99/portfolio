@@ -7,9 +7,9 @@ const ProjectTower = (props) => {
     const vStackSpacing = ['1rem', '5rem'];
     const mobile = useBreakpointValue({ base: true, lg: false });
     const cardSrc = 'https://www.youtube.com/embed/HlpF47M7T6c?controls=0&autoplay=1&mute=1&loop=1&playlist=HlpF47M7T6c&modestbranding=1';
-    const minionSrc = 'https://www.youtube.com/embed/rwc7dxAfh-U?controls=0&autoplay=1&mute=1&loop=1&playlist=rwc7dxAfh-U&modestbranding=1';
-    const spellSrc = 'https://www.youtube.com/embed/u_NgylF3niY?controls=0&autoplay=1&mute=1&loop=1&playlist=u_NgylF3niY&modestbranding=1';
-    const bossSrc = 'https://www.youtube.com/embed/QLig3kXqlOs?controls=0&autoplay=1&mute=1&loop=1&playlist=QLig3kXqlOs&modestbranding=1';
+    const minionSrc = 'https://www.youtube.com/embed/HkRc46JmDMs?controls=0&autoplay=1&mute=1&loop=1&playlist=HkRc46JmDMs&modestbranding=1';
+    const spellSrc = 'https://www.youtube.com/embed/0MlA4NuFs94?controls=0&autoplay=1&mute=1&loop=1&playlist=0MlA4NuFs94&modestbranding=1';
+    const bossSrc = 'https://www.youtube.com/embed/9T_FJiBCs_I?controls=0&autoplay=1&mute=1&loop=1&playlist=9T_FJiBCs_I&modestbranding=1';
 
     return (
         <Stack
