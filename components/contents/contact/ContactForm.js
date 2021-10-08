@@ -1,19 +1,19 @@
 import {
     Box,
     Button,
+    Flex,
     FormControl,
     FormErrorMessage,
     FormLabel,
     Input,
+    Spacer,
     Textarea,
-    useBreakpointValue,
 } from '@chakra-ui/react';
 import emailjs, { init } from 'emailjs-com';
 import { Field, Form, Formik } from 'formik';
 import useTranslation from 'next-translate/useTranslation';
 import { useState } from 'react';
 import * as Yup from 'yup';
-import TwoColumnGrid from '../../layouts/TwoColumnGrid';
 import BodyText from '../../texts/BodyText';
 import ButtonText from '../../texts/ButtonText';
 
@@ -26,7 +26,6 @@ const ContactForm = (props) => {
         _hover: { borderColor: 'brand.500' },
         focusBorderColor: 'brand.800',
     };
-    const formAlertSpacing = useBreakpointValue({ base: '2rem', md: '5rem', xl: '10rem' });
 
     const sendEmail = async (values, actions) => {
         try {
@@ -87,19 +86,15 @@ const ContactForm = (props) => {
                             <Field name={'email'}>
                                 {({ field, form }) => (
                                     <FormControl isInvalid={form.errors.email && form.touched.email}>
-                                        <TwoColumnGrid
-                                            alignItems={'left'}
-                                            m={0}
-                                            spacingX={formAlertSpacing}
-                                            columns={2}
-                                        >
+                                        <Flex m={0}>
                                             <FormLabel htmlFor={'email'} mt={'2rem'}>
                                                 <BodyText>
                                                     {t('contact-page.form.email')}
                                                 </BodyText>
                                             </FormLabel>
+                                            <Spacer/>
                                             <FormErrorMessage mt={'1.5rem'}>{form.errors.email}</FormErrorMessage>
-                                        </TwoColumnGrid>
+                                        </Flex>
                                         <Input
                                             {...inputColor}
                                             {...field}
@@ -126,18 +121,13 @@ const ContactForm = (props) => {
                                     </FormControl>
                                 )}
                             </Field>
-                            <TwoColumnGrid
-                                alignItems={'left'}
-                                m={0}
-                                spacingX={formAlertSpacing}
-                                columns={2}
-                            >
+                            <Flex m={0}>
                                 <Button
                                     mt={'5rem'}
                                     type={'submit'}
                                     isLoading={props.isSubmitting}
                                     size={'lg'}
-                                    minW={'5rem'}
+                                    minW={'10rem'}
                                     colorScheme={'brand'}
                                     variant={'outline'}
                                     _focus={{ outline: 'None' }}
@@ -147,22 +137,21 @@ const ContactForm = (props) => {
                                         {t('contact-page.form.submit')}
                                     </ButtonText>
                                 </Button>
-                                {submitted && (
-                                    <BodyText
-                                        mt={'6rem'}
-                                        fontSize={{
-                                            en: ['lg', 'xl'],
-                                            zh: ['xl', '2xl'],
-                                        }}
-                                        lineHeight={{
-                                            en: ['1rem'],
-                                            zh: ['1rem'],
-                                        }}
-                                    >
-                                        {submitted}
-                                    </BodyText>
-                                )}
-                            </TwoColumnGrid>
+                                <Spacer/>
+                                <BodyText
+                                    mt={'6rem'}
+                                    fontSize={{
+                                        en: ['lg', 'xl'],
+                                        zh: ['xl', '2xl'],
+                                    }}
+                                    lineHeight={{
+                                        en: ['1rem'],
+                                        zh: ['1rem'],
+                                    }}
+                                >
+                                    {submitted ? submitted : ''}
+                                </BodyText>
+                            </Flex>
                         </Form>
                     )}
                 </Formik>

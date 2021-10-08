@@ -1,4 +1,4 @@
-import profile from '/public/images/logo-black.png';
+import profile from '/public/images/logo-white.png';
 import useTranslation from 'next-translate/useTranslation';
 import AboutBanner from '../../components/contents/about/AboutBanner';
 
