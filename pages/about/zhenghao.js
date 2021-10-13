@@ -9,7 +9,7 @@ import BodyText from '../../components/texts/BodyText';
 const Zhenghao = (props) => {
     const { t } = useTranslation('common');
     const listItemFontSize = {
-        en: ['md', 'md', 'md', 'md', 'lg'],
+        en: ['md', 'md', 'md', 'lg'],
         zh: ['xl', 'xl', 'xl', 'xl', '1.6rem'],
     };
     const listItemLineHeight = {
