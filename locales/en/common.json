@@ -32,12 +32,14 @@
     "studio": {
       "caption": "Studio",
       "body": {
-        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA grads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in indie game community.",
+        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA grads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in the indie game community.",
         "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative combat and meaningful progression."
       }
     },
     "us": {
-      "caption": "Us"
+      "caption": "Us",
+      "zhenghao": "Zhenghao text",
+      "jiusi": "Jiusi is a current Art History student at UCLA, preparing for her upcoming graduate program in 3D modeling and animation at Academy of Art University."
     },
     "zhenghao": {
       "left": {
@@ -66,14 +68,15 @@
     "project-tower": {
       "banner": {
         "l1": "Project Tower",
-        "l2": "A prototype demo of our first attempt at Throne of Mortals"
+        "l2": "A playable prototype of our first attempt at Throne of Mortals"
       },
       "download": {
         "caption": "Download and try out",
         "body": {
-          "l1": "Download desktop version for best experience.",
-          "l2": "WebGL build is also available for convenience with limited graphics."
-        }
+          "l1": "Download PC version for best experience.",
+          "l2": "WebGL build is also available for convenience with limited graphics. Game file is about 150MB in size, so depending on your network connection, there might be a short loading time."
+        },
+        "button": "Launch WebGL Build in Browser"
       },
       "card": {
         "caption": "Card-based Combat",

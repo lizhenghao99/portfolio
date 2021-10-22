@@ -41,8 +41,7 @@ const Index = (props) => {
                                 {t('zhenghao')}
                             </BodyText>
                             <BodyText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et consequat velit. Nullam
-                                massa ex.
+                                {t('about-page.us.zhenghao')}
                             </BodyText>
                             <ActionButton href={'/about/zhenghao'}>
                                 {t('learn-more')}
@@ -58,8 +57,7 @@ const Index = (props) => {
                                 {t('jiusi')}
                             </BodyText>
                             <BodyText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et consequat velit. Nullam
-                                massa ex.
+                                {t('about-page.us.jiusi')}
                             </BodyText>
                             <ActionButton href={'/about/jiusi'}>
                                 {t('learn-more')}
