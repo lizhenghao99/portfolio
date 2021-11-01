@@ -15,7 +15,6 @@ const DescriptionGrid = (props) => {
         <Center>
             <MultiColumnGrid
                 templateColumns={templateColumns}
-                maxW={'80%'}
                 my={'3rem'}
                 {...rest}
             >

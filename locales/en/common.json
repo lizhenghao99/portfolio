@@ -38,28 +38,33 @@
     },
     "us": {
       "caption": "Us",
-      "zhenghao": "Zhenghao text",
+      "zhenghao": "Zhenghao is a recent CS graduate of UCLA, preparing to start his career as a software development engineer.",
       "jiusi": "Jiusi is a current Art History student at UCLA, preparing for her upcoming graduate program in 3D modeling and animation at Academy of Art University."
     },
     "zhenghao": {
       "left": {
-        "caption": "Lorem ipsum.",
+        "caption": "Personalities",
         "body": {
-          "l1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien massa, eget tristique metus sagittis non. Sed quis fringilla."
+          "l1": "Zhenghao is a recent CS graduate of UCLA, preparing to start his career as a software development engineer.",
+          "l2": "Zhenghao is passionate about game development, focusing on incorporating traditional Chinese mythologies and culture into modern video games to create an authentic and unique Chinese fantasy world."
         }
       },
       "mid": {
-        "caption": "Lorem ipsum.",
+        "caption": "Responsibilities",
         "body": {
-          "l1": "Phasellus semper lorem ut nulla faucibus vehicula.",
-          "l2": "Nunc mollis magna nec augue semper congue.",
-          "l3": "In sodales quam nec ligula gravida, sit amet vulputate massa blandit."
+          "l0": "Zhenghao is the software engineer of the team, transforming the studio's ideas into implementations.",
+          "l1": "Unreal Engine C++/BP development",
+          "l2": "Unity C# development",
+          "l3": "Gameplay and level design",
+          "l4": "Material and shader development",
+          "l5": "Spine 2D animation creation"
         }
       },
       "right": {
-        "caption": "Lorem ipsum.",
+        "caption": "Experiences",
         "body": {
-          "l1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien massa, eget tristique metus sagittis non. Sed quis fringilla."
+          "l1": "Besides developing games as a hobby, Zhenghao is applying for full time general SDE positions with a full-stack/backend focus.",
+          "l2": "Zhenghao has both project and internship experience in implementing REST backend services with Spring Boot as well as full-stack web applications with React + Node using Next.js and Nest.js."
         }
       }
     }
@@ -71,12 +76,12 @@
         "l2": "A playable prototype of our first attempt at Throne of Mortals"
       },
       "download": {
-        "caption": "Download and try out",
+        "caption": "Give it a try",
         "body": {
           "l1": "Download PC version for best experience.",
-          "l2": "WebGL build is also available for convenience with limited graphics. Game file is about 150MB in size, so depending on your network connection, there might be a short loading time."
+          "l2": "Web build is also available for convenience with limited graphics."
         },
-        "button": "Launch WebGL Build in Browser"
+        "button": "Launch Web Build in Browser"
       },
       "card": {
         "caption": "Card-based Combat",

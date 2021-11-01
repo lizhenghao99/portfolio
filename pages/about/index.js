@@ -10,7 +10,7 @@ import CaptionText from '../../components/texts/CaptionText';
 const Index = (props) => {
         const { t } = useTranslation('common');
         return (
-            <TextBlock spacing={['2rem', '3rem']}>
+            <TextBlock spacing={['2rem', '3rem']} mx={'10rem'}>
                 <CaptionText>
                     {t('about-page.studio.caption')}
                 </CaptionText>
@@ -28,7 +28,8 @@ const Index = (props) => {
                         mx={0}
                         w={'100%'}
                         spacingY={'5rem'}
-                        spacingX={'15rem'}
+                        spacingX={'10rem'}
+                        alignItems={'flex-start'}
                     >
                         <Stack
                             direction={'column'}

@@ -7,7 +7,7 @@ const TextBlock = (props) => {
             <StackSkeleton
                 mx={['2rem', '5rem']}
                 my={['2rem', '5rem']}
-                maxW={'60rem'}
+                maxW={'80rem'}
                 align={'left'}
                 {...props}
             >

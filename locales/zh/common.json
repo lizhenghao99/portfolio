@@ -38,28 +38,33 @@
     },
     "us": {
       "caption": "我们",
-      "zhenghao": "Zhenghao text",
-      "jiusi": "九四是一名UCLA艺术史专业的在校生，即将成为Academy of Art University的研究生学习3D建模和动画。"
+      "zhenghao": "雪莲是UCLA计算机专业的应届毕业生，正在努力上岸成为一名真正的全职码农。",
+      "jiusi": "九四是一名UCLA艺术史专业的在校生，即将在Academy of Art开始3D建模和动画的研究生学习。"
     },
     "zhenghao": {
       "left": {
-        "caption": "Lorem ipsum.",
+        "caption": "个人",
         "body": {
-          "l1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien massa, eget tristique metus sagittis non. Sed quis fringilla."
+          "l1": "雪莲是UCLA计算机专业的应届毕业生，正在努力上岸成为一名真正的全职码农。",
+          "l2": "雪莲热爱游戏开发，致力于将传统中国传说与文化融入现代电子游戏，创造一个正宗而独特的国风奇幻世界。"
         }
       },
       "mid": {
-        "caption": "Lorem ipsum.",
+        "caption": "职责",
         "body": {
-          "l1": "Phasellus semper lorem ut nulla faucibus vehicula.",
-          "l2": "Nunc mollis magna nec augue semper congue.",
-          "l3": "In sodales quam nec ligula gravida, sit amet vulputate massa blandit."
+          "l0": "雪莲是团队中的程序员，将工作室的想法转化成代码。",
+          "l1": "虚幻引擎C++/BP开发",
+          "l2": "Unity引擎C#开发",
+          "l3": "游戏内容和关卡设计",
+          "l4": "材质和着色器开发",
+          "l5": "Spine 2D动画制作"
         }
       },
       "right": {
-        "caption": "Lorem ipsum.",
+        "caption": "经历",
         "body": {
-          "l1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod sapien massa, eget tristique metus sagittis non. Sed quis fringilla."
+          "l1": "在业余游戏开发之外，雪莲正在投递全职软件工程师岗位，侧重全栈或后端开发。",
+          "l2": "雪莲在以往的个人项目和实习中有Spring Boot REST后端开发以及基于Next.js和Nest.js的React + Node全栈网络应用开发的相关经验。"
         }
       }
     }
@@ -71,10 +76,10 @@
         "l2": "《尘巅》初稿可玩小样"
       },
       "download": {
-        "caption": "下载试玩",
+        "caption": "尝试一下",
         "body": {
           "l1": "下载PC版以便获得最佳体验",
-          "l2": "为了方便试玩，您也可以直接游玩网页版，但画面效果将受到限制。游戏文件约150MB，所以根据您的网络情况，可能会有短暂的加载时间。"
+          "l2": "为了方便试玩，您也可以直接游玩网页版，但画面效果将受到限制。"
         },
         "button": "在浏览器中运行网页版"
       },
