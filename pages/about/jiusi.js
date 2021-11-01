@@ -1,8 +1,8 @@
-import profile from '/public/images/logo-white.png';
+import profile from '/public/images/jiusi-profile.png';
 import useTranslation from 'next-translate/useTranslation';
 import AboutBanner from '../../components/contents/about/AboutBanner';
 
-const Zhenghao = (props) => {
+const Jiusi = (props) => {
     const { t } = useTranslation('common');
 
     return (
@@ -12,4 +12,4 @@ const Zhenghao = (props) => {
     );
 };
 
-export default Zhenghao;
+export default Jiusi;
