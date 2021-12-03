@@ -2,7 +2,7 @@ import { AspectRatio } from '@chakra-ui/react';
 import NextImage from 'next/image';
 
 const ImageComponent = (props) => {
-    const { ratio, src, width, height, quality, priority, ...rest } = props;
+    const { ratio, src, width, height, quality, priority, placeHolder, ...rest } = props;
     return (
         <AspectRatio
             ratio={ratio}
@@ -13,7 +13,7 @@ const ImageComponent = (props) => {
                 quality={quality}
                 layout={'fill'}
                 objectFit={'cover'}
-                placeholder={'blur'}
+                placeholder={placeHolder ? placeHolder : 'blur'}
                 priority={priority}
             />
         </AspectRatio>

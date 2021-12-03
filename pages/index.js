@@ -1,10 +1,10 @@
-import tower from '/public/images/TutorialSnapshotSquare.png';
 import { Center, Stack, StackDivider, useBreakpointValue, useColorModeValue } from '@chakra-ui/react';
 import useTranslation from 'next-translate/useTranslation';
 import IndexBanner from '../components/contents/index/IndexBanner';
 import IndexRow from '../components/contents/index/IndexRow';
 import logoBlack from '../public/images/logo-black.png';
 import logoWhite from '../public/images/logo-white.png';
+import tower from '../public/images/TutorialSnapshotSquare.png';
 
 const Home = (props) => {
     const { t } = useTranslation('common');
