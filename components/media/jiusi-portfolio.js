@@ -33,7 +33,7 @@ const JiusiPortfolio = (props) => {
                     ratio={16 / 9}
                     src={basePath + value}
                     placeHolder={'empty'}
-                    quality={10}
+                    quality={5}
                 >
                 </ImageComponent>
             ))}
