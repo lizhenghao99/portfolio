@@ -5,7 +5,7 @@ const Footer = (props) => {
     const bg = useColorModeValue('black', 'gray.700');
     const color = useColorModeValue('white', 'white');
     const footerInfos = [
-        '1929 Beloit Ave, Los Angeles',
+        '333 El Camino Real, San Carlos',
         ' (206) 369-7158',
         'twostackstudio@outlook.com',
     ];

@@ -51,7 +51,7 @@ const Zhenghao = (props) => {
             <DescriptionStack
                 captionText={t('about-page.zhenghao.right.caption')}
                 bodyText={
-                    [...Array(2).keys()].map(value => t(`about-page.zhenghao.right.body.l${value + 1}`))
+                    [...Array(1).keys()].map(value => t(`about-page.zhenghao.right.body.l${value + 1}`))
                 }
             />
             <Flex minW={'100%'}>

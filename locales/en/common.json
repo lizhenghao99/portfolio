@@ -32,20 +32,20 @@
     "studio": {
       "caption": "Studio",
       "body": {
-        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA grads from Beijing, China. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in the indie game community.",
-        "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative combat and meaningful progression."
+        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA grads from Beijing based in the bay area. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in the indie game community.",
+        "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative gameplay and meaningful progression."
       }
     },
     "us": {
       "caption": "Us",
-      "zhenghao": "Zhenghao is a recent CS graduate of UCLA, preparing to start his career as a software development engineer.",
-      "jiusi": "Jiusi is a current Art History student at UCLA, preparing for her upcoming graduate program in 3D modeling and animation at Academy of Art University."
+      "zhenghao": "Zhenghao is a junior full stack software engineer at AcuityMD.",
+      "jiusi": "Jiusi is a current MFA student at Academy of Art University, majoring in Animation and Visual Effects."
     },
     "zhenghao": {
       "left": {
         "caption": "Personalities",
         "body": {
-          "l1": "Zhenghao is a recent CS graduate of UCLA, preparing to start his career as a software development engineer.",
+          "l1": "Zhenghao is a junior full stack software engineer at AcuityMD.",
           "l2": "Zhenghao is passionate about game development, focusing on incorporating traditional Chinese mythologies and culture into modern video games to create an authentic and unique Chinese fantasy world."
         }
       },
@@ -63,8 +63,7 @@
       "right": {
         "caption": "Experiences",
         "body": {
-          "l1": "Besides developing games as a hobby, Zhenghao is applying for full time general SDE positions with a full-stack/backend focus.",
-          "l2": "Zhenghao has both project and internship experience in implementing REST backend services with Spring Boot as well as full-stack web applications with React + Node using Next.js and Nest.js."
+          "l1": "Besides developing games as a hobby, Zhenghao is also experienced in TypeScript and React development."
         }
       }
     }
@@ -118,8 +117,8 @@
     "body": {
       "l1": "twostackstudio@outlook.com",
       "l2": "(206) 369-7158",
-      "l3": "1929 Beloit Ave",
-      "l4": "Los Angeles, CA 90025"
+      "l3": "333 El Camino Real",
+      "l4": "San Carlos, CA 94070"
     },
     "form": {
       "required": "Required",
