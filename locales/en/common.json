@@ -32,7 +32,7 @@
     "studio": {
       "caption": "Studio",
       "body": {
-        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA grads from Beijing based in the bay area. It currently consists of a full stack artist, a full stack developer, a cat, a dog, and two computers. We are game lovers trying to leave a footprint in the indie game community.",
+        "l1": "2StackStudio is a hobbyist independent game development studio, run by a couple of UCLA grads from Beijing based in the bay area. It currently consists of a full stack artist, a full stack developer, a dog, and two computers. We are game lovers trying to leave a footprint in the indie game community.",
         "l2": "2StackStudio is focused on creating story rich, narrative driven RPGs with innovative gameplay and meaningful progression."
       }
     },
@@ -45,7 +45,7 @@
       "left": {
         "caption": "Personalities",
         "body": {
-          "l1": "Zhenghao is a junior full stack software engineer at AcuityMD.",
+          "l1": "Zhenghao is a full stack software engineer at AcuityMD.",
           "l2": "Zhenghao is passionate about game development, focusing on incorporating traditional Chinese mythologies and culture into modern video games to create an authentic and unique Chinese fantasy world."
         }
       },
@@ -63,7 +63,7 @@
       "right": {
         "caption": "Experiences",
         "body": {
-          "l1": "Besides developing games as a hobby, Zhenghao is also experienced in TypeScript and React development."
+          "l1": "Besides developing games as a hobby, Zhenghao is also experienced in web development with React, Node, and TypeScript."
         }
       }
     }
